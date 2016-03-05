@@ -5,8 +5,116 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="page-header">
+      <a href="index.html" class="page-header__logo"></a>
+      <button class="main-nav-btn-open main-nav-btn-open--hidden"></button><!--сомнения-->
+      <button class="main-nav-btn-close main-nav-btn-close--hidden"></button><!--сомнения-->
+      <ul class="main-nav">
+        <li class="main-nav__item"><a href="#">информация</a></li>
+        <li class="main-nav__item"><a href="#">возможности</a></li>
+        <li class="main-nav__item"><a href="#">отзывы</a></li>
+        <li class="main-nav__item"><a href="#">стоимость</a></li>
+      </ul>
+    </header>
+    <section class="intro">
+      <h1 class="intro__title">взгляните на жизнь иначе!</h1>
+      <img class="intro__img" src="img/iphone.jpg" alt="iphone">
+    </section>
+    <section class="download">
+      <a href="#" class="download__link">Скачать приложение</a>
+      <ul class="download-list">
+        <li class="download-list__item download-list__item--apple"><a href="#"></a></li>
+        <li class="download-list__item download-list__item--android"><a href="#"></a></li>
+        <li class="download-list__item download-list__item--windows"><a href="#"></a></li>
+      </ul>
+      <p>Доступно для iPhone, iPad, Android, OS X, Windows 8</p>
+    </section>
+    <section class="features">
+      <h1 class="features__title">Устали от серости мегаполиса?</h1>
+      <h1 class="features__title">Нам есть, что вам предложить!</h1>
+      <div class="features__item">
+        <h2>Поднимает настроение</h2>
+        <p>Приложение позволит вам победить осенюю хандру и депрессию буквально в несколько кликов!</p>
+      </div>
+      <div class="features__item">
+        <h2>Меняет мир вокруг</h2>
+        <p>Сделайте снимок и украсьте его смайликом или текстовой надписью, чтобы усилить эффект</p>
+      </div>
+      <div class="features__item">
+        <h2>Заводит новых друзей</h2>
+        <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+      </div>
+    </section>
+    <section class="review">
+      <img class="review__img" src="img/review.jpg" alt="review">
+      <p class="review__author">Николай Петров</p>
+      <cite class="review__cite">«Это приложение перевернуло мой мир и позволило
+        по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей
+        будущей женой в комментариях к выложенной фотографии!»</cite>
+      <div class="review__slider"></div><!-- пока не делала -->
+    </section>
+    <section class="price">
+      <div class="price__table price__table--base">
+        <tr>
+          <td><strong>стандарт</strong>1,99 USD</td>
+        </tr>
+        <tr>
+          <td><span>розовый фильтр</span><img src="sprite.svg" alt="yes"></td>
+        </tr>
+        <tr>
+          <td><span>смайлики</span><img src="sprite.svg" alt="no"></td>
+        </tr>
+        <tr>
+          <td><span>комментарии</span><img src="sprite.svg" alt="no"></td>
+        </tr>
+      </div>
+      <div class="price__table price__table--standart">
+        <tr>
+          <td><strong>стандарт</strong>3,99 USD</td>
+        </tr>
+        <tr>
+          <td><span>розовый фильтр</span><img src="sprite.svg" alt="yes"></td>
+        </tr>
+        <tr>
+          <td><span>смайлики</span><img src="sprite.svg" alt="yes"></td>
+        </tr>
+        <tr>
+          <td><span>комментарии</span><img src="sprite.svg" alt="no"></td>
+        </tr>
+      </div>
+      <div class="price__table price__table--unlim">
+        <tr>
+          <td><strong>стандарт</strong>9,99 USD</td>
+        </tr>
+        <tr>
+          <td><span>розовый фильтр</span><img src="sprite.svg" alt="yes"></td>
+        </tr>
+        <tr>
+          <td><span>смайлики</span><img src="sprite.svg" alt="yes"></td>
+        </tr>
+        <tr>
+          <td><span>комментарии</span><img src="sprite.svg" alt="no"></td>
+        </tr>
+      </div>
+      <div class="price__slider"></div><!-- пока не делала -->
+    </section>
+    <section class="contacts">
+      <h1 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h1>
+      <div class="contacts__tel">
+        <h2>Звоните:</h2>
+        <span>+7 (812) 555-66-66</span>
+      </div>
+      <div class="contacts__email">
+        <h2>Пишите:</h2>
+        <span>mail@htmlacademy.ru</span>
+      </div>
+      <div class="contacts__adress">
+        <h2>Приезжайте в гости:</h2>
+        <span>ул. Большая Конюшенная, 19/8
+      </div>
+      <div class="contacts__map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6000760813506!2d30.32172073647358!3d59.938778058850886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1454246306456"  allowfullscreen></iframe>
+      </div>
+    </section>
   </body>
 </html>
