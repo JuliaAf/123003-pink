@@ -1,0 +1,44 @@
+.popup {
+  position: absolute;
+  width: 280px;
+  padding: 40px 20px 50px 20px;
+  text-align: center;
+  background: @white-color;
+  box-shadow: 0 7px 15px 0 rgba(0,0,0,0.15);
+  &--failure {
+    top: 1165px;
+  }
+  &--success {
+    top: 1640px;
+  }
+  &--hidden {
+    display: none;
+  }
+  &__title {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  &__description {
+    padding-bottom: 80px;
+  }
+  &__btn {
+    display: block;
+    width: 100%;
+    padding: 19px 0;
+    color: @white-color;
+    background: #2aab6d;
+    border-radius: 3px;
+    border: 0;
+    outline: 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  &__btn--success {
+    margin-top: 80px;
+  }
+  &__btn--failure {
+    margin-top: 35px;
+  }
+}

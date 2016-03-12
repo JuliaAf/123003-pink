@@ -1,16 +1,23 @@
 .download {
-  padding: 28px 20px 30px 20px;
+  padding: 28px 0 33px 0;
   font-size: 18px;
   line-height: 24px;
-  color: #ffffff;
+  color: @white-color;
   text-align: center;
   background: #1d2631;
+  &__wrapper {
+    .wrapper();
+  }
   &__link {
-    padding:10px 35px;
+    padding:12px 0;
     display: block;
-    border:3px solid #ffffff;
-    border-radius: 50%;
+    border:3px solid @white-color;
+    border-radius: 30px;
     margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    color: @white-color;
+    text-decoration: none;
   }
   &__list{
     margin-bottom: 22px;
@@ -18,22 +25,21 @@
   &__item {
     display: inline-block;
     margin-right: 35px;
-    vertical-align: middle;
+    vertical-align: bottom;
   }
-  &__item a::before {
-    content:"";
+  &__item--apple {
     background: url(../img/logo-apple.svg);
-    width:48px;
-    height:48px;
+    width: 46px;
+    height: 56px;
   }
   &__item--android {
     background: url(../img/logo-android.svg);
-    width:43px;
-    height:46px;
+    width: 42px;
+    height: 47px;
   }
   &__item--windows {
     background: url(../img/logo-microsoft.svg);
-    width:44px;
-    height:44px;
+    width: 43px;
+    height: 41px;
   }
 }

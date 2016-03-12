@@ -1,0 +1,53 @@
+.contacts {
+  text-align: center;
+  &__wrapper {
+    .wrapper();
+  }
+  &__title {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 35px;
+    line-height: 28px;
+  }
+  &__email,
+  &__adress,
+  &__tel {
+    margin-bottom: 20px;
+  }
+  &__email h3,
+  &__adress h3,
+  &__tel h3 {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+  }
+  &__email a,
+  &__adress span,
+  &__tel a {
+    font-weight: 300;
+    font-size: 24px;
+    color: @accent-color;
+    text-decoration: none;
+  }
+  &__adress {
+    position: relative;
+  }
+  &__adress::after {
+    content: "";
+    position: absolute;
+    background: url(../img/bg-triangle-white-footer.svg);
+    width: 595px;
+    height: 61px;
+    left: -137px;
+    bottom: -60px;
+  }
+  &__map iframe{
+    height: 200px;
+    border: 0;
+    width: 100%;
+    background-image: url(../img/bg-map.png);
+  }
+}

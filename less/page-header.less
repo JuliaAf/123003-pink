@@ -1,22 +1,39 @@
-  .page-header {
-background: url(../img/bg-back-mobile.jpg);
-color: #ffffff;
+.page-header {
+  background: url(../img/bg-back-mobile.jpg);
+  min-height: 458px;
+  color: @white-color;
+  position: relative;
+  .clearfix();
+  &--photo-page,
+  &--form-page{
+    min-height: 236px;
+  }
   &__heading {
-  padding:20px;
-  background-color: rgba(0,0,0,0.3);
+    padding: 18px 20px;
+    background-color: rgba(0,0,0,0.3);
   .clearfix();
   }
   &__logo {
-  float:left;
+    float: left;
+    padding-top: 4px;
   }
   &__title {
-  margin-top:20px;
-  margin-bottom:30px;
-  text-align:center;
+    margin-top: 22px;
+    margin-bottom: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+  }
+  &__title--photo-page {
+    margin-top: 30px;
   }
   &__img {
-  width:258px;
-  height:286px;
-  float:left;
+    width: 258px;
+    height: 286px;
+    float: left;
+    position: absolute;
+    left: 0;
+    bottom: 0;
   }
 }
