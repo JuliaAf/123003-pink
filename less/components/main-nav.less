@@ -1,0 +1,29 @@
+.main-nav {
+  position: absolute;
+  z-index: 5;
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  &--hidden {
+    display: none;
+  }
+  &__item {
+    list-style-type: none;
+    text-transform: uppercase;
+  }
+  &__item a {
+    display: block;
+    padding: 19px 0;
+
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color: @white-color;
+    text-decoration: none;
+
+    background-color: @main-color;
+    border-top: solid 1px rgba(255,255,255,0.15);
+    border-bottom: solid 1px #000000;
+  }
+}

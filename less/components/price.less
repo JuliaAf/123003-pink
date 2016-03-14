@@ -1,37 +1,43 @@
 .price {
-  text-align: center;
   margin-bottom: 85px;
-  &__wrapper {
-  //  overflow:hidden;
-  }
+  overflow: hidden;
+
+  text-align: center;
   &__table {
-    margin-bottom: 40px;
+    width: 848px;
+    margin-bottom: 35px;
+
     text-transform: uppercase;
+
+    transform: translateX(-264px);
   }
   &__table,
   &__table-column,
   &__table-row {
-    border: 2px solid #e5e5e5;
+    border: 2px solid @border-color;
   }
-  &__table-column{
+  &__table-column {
+    width: 280px;
+    height: 58px;
+
     .clearfix();
   }
   &__table-column span {
     float: left;
+    margin-left: 23px;
   }
   &__table-column img {
     float: right;
-  }
-  &__table-column--active {
-    //box-sizing:border-box;
-    width: 280px;
+    margin-right: 20px;
   }
   &__table-column--head {
-    background: @main-color;
     padding: 20px 0;
-    color: @white-color;
-    font-size: 24px;
+
     font-weight: 300;
+    font-size: 24px;
+    color: @white-color;
+
+    background: @main-color;
   }
   &__table-column--head b {
     font-size: 18px;
@@ -40,16 +46,18 @@
     display: inline-block;
     width: 6px;
     height: 6px;
-    border-radius: 50%;
-    background-color: #bec2c7;
     margin-right: 12px;
+
     vertical-align: middle;
+
+    background-color: #bec2c7;
+    border-radius: 50%;
   }
   &__slider-item:last-child {
     margin-right: 0;
   }
-  &__slider-item--active{
-    border: 3px solid @main-color;
+  &__slider-item--active {
     background-color: @white-color;
+    border: 3px solid @main-color;
   }
 }

@@ -1,12 +1,15 @@
 .contacts {
   text-align: center;
   &__wrapper {
+    overflow: hidden;
+
     .wrapper();
   }
   &__title {
-    font-size: 24px;
-    font-weight: 300;
     margin-bottom: 35px;
+
+    font-weight: 300;
+    font-size: 24px;
     line-height: 28px;
   }
   &__email,
@@ -18,11 +21,12 @@
   &__adress h3,
   &__tel h3 {
     display: block;
-    font-size: 18px;
-    font-weight: 700;
     margin: 0;
-    padding: 0;
     margin-bottom: 5px;
+    padding: 0;
+
+    font-weight: 700;
+    font-size: 18px;
   }
   &__email a,
   &__adress span,
@@ -38,16 +42,19 @@
   &__adress::after {
     content: "";
     position: absolute;
-    background: url(../img/bg-triangle-white-footer.svg);
+    bottom: -60px;
+    left: -137px;
+
     width: 595px;
     height: 61px;
-    left: -137px;
-    bottom: -60px;
+
+    background: url(../img/bg-triangle-white-footer.svg);
   }
-  &__map iframe{
-    height: 200px;
-    border: 0;
+  &__map iframe {
     width: 100%;
+    height: 200px;
+
     background-image: url(../img/bg-map.png);
+    border: 0;
   }
 }

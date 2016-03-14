@@ -1,6 +1,7 @@
 .review {
-  text-align: center;
   margin-bottom: 133px;
+
+  text-align: center;
   &__wrapper {
     .wrapper();
   }
@@ -12,23 +13,27 @@
     font-size: 18px;
   }
   &__cite {
-    line-height: 30px;
     margin: 15px 20px 20px 20px;
+
+    line-height: 30px;
   }
   &__slider-item {
     display: inline-block;
     width: 6px;
     height: 6px;
-    border-radius: 50%;
-    background-color: #bec2c7;
     margin-right: 19px;
+
     vertical-align: middle;
+
+    background-color: #bec2c7;
+    border: 3px solid @white-color;
+    border-radius: 50%;
   }
   &__slider-item:last-child {
     margin-right: 0;
   }
-  &__slider-item--active{
-    border: 3px solid @main-color;
+  &__slider-item--active {
     background-color: @white-color;
+    border: 3px solid @main-color;
   }
 }

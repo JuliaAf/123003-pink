@@ -1,13 +1,15 @@
 .upload {
   position: relative;
+
   margin-bottom: 85px;
   &__wrapper {
     .wrapper();
   }
   &__title {
     padding: 23px 0 60px 0;
-    text-align: center;
+
     line-height: 30px;
+    text-align: center;
   }
   &__img {
     width: 280px;
@@ -16,71 +18,84 @@
   }
   &__filter {
     display: inline-block;
-    vertical-align: middle;
     margin-bottom: 65px;
+
+    vertical-align: middle;
   }
   &__filter--crop {
-    background: url(../img/icon-editor-crop.svg);
     width: 50px;
     height: 50px;
     margin-left: 38px;
+
+    background: url(../img/icon-editor-crop.svg);
   }
   &__filter--fill {
-    background: url(../img/icon-editor-fill.svg);
     width: 45px;
     height: 45px;
     margin-left: 32px;
+
+    background: url(../img/icon-editor-fill.svg);
   }
   &__filter--contrast {
-    background: url(../img/icon-editor-contrast.svg);
     width: 31px;
     height: 31px;
     margin-left: 39px;
+
+    background: url(../img/icon-editor-contrast.svg);
   }
   &__filter-bar {
     position: absolute;
-    left: 50%;
     bottom: 193px;
-    margin-left: -120px;
+    left: 50%;
+
     width: 240px;
     height: 2px;
+    margin-left: -120px;
+
     background: @main-color;
   }
   &__filter-toggle {
     position: absolute;
-    left: 320px;
     bottom: -6px;
-    margin-left: -120px;
+    left: 320px;
+
     width: 10px;
     height: 10px;
+    margin-left: -120px;
+
     background: @white-color;
     border: 2px solid @accent-color;
     border-radius: 50%;
     cursor: pointer;
   }
   hr {
-    color: #dddfe0;
-    background: #dddfe0;
-    margin-bottom: 38px;
-    outline: 0;
     height: 1px;
+    margin-bottom: 38px;
+
+    color: #dddfe0;
+
+    background: #dddfe0;
     border: 0;
+    outline: 0;
   }
   &__make-btn,
   &__cancel-btn {
     display: block;
     width: 100%;
+    margin-bottom: 12px;
     padding: 12px 0;
+
+    font-weight: bold;
+    font-size: 18px;
+    color: @accent-color;
+
+    background: none;
     border: 3px solid @accent-color;
     border-radius: 30px;
-    font-size: 18px;
-    font-weight: bold;
-    background: none;
-    margin-bottom: 12px;
-    color: @accent-color;
   }
   &__cancel-btn {
-    color :#dddfe0;
+    color: #dddfe0;
+
     border-color: #dddfe0;
   }
 }
