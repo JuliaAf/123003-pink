@@ -1,0 +1,47 @@
+.page-header {
+  position: relative;
+
+  min-height: 458px;
+
+  color: @white-color;
+
+  background: url(../img/bg-back-mobile.jpg);
+
+  .clearfix();
+  &--photo-page,
+  &--form-page {
+    min-height: 236px;
+  }
+  &__heading {
+    padding: 18px 20px;
+
+    background-color: rgba(0,0,0,0.3);
+
+    .clearfix();
+  }
+  &__logo {
+    float: left;
+    padding-top: 4px;
+  }
+  &__title {
+    margin-top: 22px;
+    margin-bottom: 30px;
+
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+  }
+  &__title--photo-page {
+    margin-top: 30px;
+  }
+  &__img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    float: left;
+    width: 258px;
+    height: 286px;
+  }
+}
