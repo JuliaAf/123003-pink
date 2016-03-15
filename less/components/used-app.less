@@ -5,7 +5,7 @@
 
   border: 0;
 
-  label: :before {
+  &__label::before {
     content: "";
 
     display: inline-block;
@@ -29,12 +29,14 @@
     color: @accent-color;
     text-transform: uppercase;
   }
-  label {
+  &__label {
     display: inline-block;
     margin-bottom: 37px;
 
     font-size: 18px;
     vertical-align: middle;
+
+    cursor: pointer;
   }
   input {
     display: none;
