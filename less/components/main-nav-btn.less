@@ -36,3 +36,20 @@
     border-bottom: 4px solid @white-color;
   }
 }
+@media @tablet-width {
+  .main-nav-btn {
+    &::after {
+      top: 27px;
+      left: -20px;
+    }
+    &::before {
+      top: 17px;
+      left: -20px;
+    }
+  }
+}
+@media @desktop-width {
+  .main-nav-btn {
+    display: none;
+  }
+}

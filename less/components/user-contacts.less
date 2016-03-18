@@ -5,10 +5,10 @@
 
   border: 0;
   input,
-  label {
+  &__label {
     display: block;
   }
-  label {
+  &__label {
     display: block;
     margin-bottom: 8px;
     margin-left: 23px;
@@ -28,5 +28,65 @@
     border: 2px solid @border-color;
     border-radius: 3px;
     outline: 0;
+  }
+}
+@media @mobile-width {
+  .user-contacts {
+    &__label--tablet {
+      display: none;
+    }
+    &__title {
+      display: none;
+    }
+  }
+}
+@media @tablet-width {
+  .user-contacts {
+    position: absolute;
+    top: 1408px;
+
+    width: 510px;
+    padding: 45px 55px 0 55px;
+
+    .fieldset-border();
+    &__title {
+      display: block;
+      margin-bottom: -10px;
+      padding: 0 30px;
+
+      line-height: 18px;
+      text-align: center;
+      color: @accent-color;
+      text-transform: uppercase;
+    }
+    &__label--mobile {
+      display: none;
+    }
+    &__label--tablet {
+      margin-bottom: 33px;
+    }
+    input {
+      margin-bottom: 15px;
+    }
+  }
+}
+@media @desktop-width {
+  .user-contacts {
+    top: 982px;
+
+    width: 830px;
+    input {
+      width: 375px;
+    }
+    &__tel-section,
+    &__email-section {
+      display: inline-block;
+    }
+    &__tel-section {
+      margin-right: 70px;
+    }
+    &__label--tablet {
+      margin-bottom: 15px;
+    }
   }
 }

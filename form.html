@@ -13,87 +13,124 @@
             <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="logo">
           </a>
           <a href="#" class="main-nav-btn main-nav-btn--close" type="button"></a>
+          <ul class="main-nav main-nav--hidden">
+            <li class="main-nav__item"><a href="index.html">главная</a></li>
+            <li class="main-nav__item"><a href="photo.html">фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru/">html academy</a></li>
+          </ul>
         </div>
-        <ul class="main-nav main-nav--hidden">
-          <li class="main-nav__item"><a href="index.html">главная</a></li>
-          <li class="main-nav__item"><a href="photo.html">фотографии</a></li>
-          <li class="main-nav__item"><a href="form.html">конкурс</a></li>
-          <li class="main-nav__item"><a href="https://htmlacademy.ru/">html academy</a></li>
-        </ul>
-        <h1 class="page-header__title page-header__title--form-page">Конкурс на самое<br>безбашенное<br>путешествие с Пинк</h1>
+        <h1 class="page-header__title page-header__title--form-page">Конкурс на самое <br>безбашенное <br>путешествие с Пинк</h1>
       </header>
       <div class="intro intro--form-page">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</div>
-      <form action="#" class="form">
-        <fieldset class="user-info">
-          <label for="name">Имя:</label>
-          <input id="name" type="text" placeholder="Введите ваше имя" name="name">
-          <label for="family-name">Фамилия:</label>
-          <input id="family-name" type="text" placeholder="Укажите фамилию" name="family-name">
-          <label for="patronymic">Отчество:</label>
-          <input id="patronymic" type="text" placeholder="Ну и отчество тоже" name="patronymic">
-        </fieldset>
-        <fieldset class="achievement">
-          <legend class="achievement__title">Ваши безбашенные<br>достижения в путешествии</legend>
-          <input id="achievement-1" type="checkbox" name="achievement" checked>
-          <label class="achievement__label" for="achievement-1">Сделал селфи с акулой</label><br>
-          <input id="achievement-2" type="checkbox" name="achievement" checked>
-          <label class="achievement__label" for="achievement-2">Обгорел на пляже</label><br>
-          <input id="achievement-3" type="checkbox" name="achievement">
-          <label class="achievement__label" for="achievement-3">Видел Чака Норриса</label><br>
-          <input id="achievement-4" type="checkbox" name="achievement">
-          <label class="achievement__label" for="achievement-4">Накупил сувениров</label><br>
-          <input id="achievement-5" type="checkbox" name="achievement" checked>
-          <label class="achievement__label" for="achievement-5">Удержал башню</label><br>
-          <input id="achievement-6" type="checkbox" name="achievement">
-          <label class="achievement__label" for="achievement-6">Разгромил отель</label><br>
-        </fieldset>
-        <fieldset class="user-contacts">
-          <label for="tel">Номерок телефончика</label>
-          <input id="tel" type="tel" placeholder="Номер, пожалуйста" name="tel">
-          <label for="adress">Адресок почты</label>
-          <input id="adress" type="email" placeholder="E-mail, пожалуйста" name="email">
-        </fieldset>
-        <fieldset class="used-app">
-          <legend class="used-app__title">С каким приложением вы путешествовали</legend>
-          <input id="used-app-1" type="radio" name="used-app" checked>
-          <label class="used-app__label" for="used-app-1">Pink для iOS</label><br>
-          <input id="used-app-2" type="radio" name="used-app">
-          <label class="used-app__label" for="used-app-2">Pink на Android</label><br>
-          <input id="used-app-3" type="radio" name="used-app">
-          <label class="used-app__label" for="used-app-3">Windows Phone</label><br>
-        </fieldset>
-        <fieldset class="conclusion">
-          <legend class="conclusion__title">Опишите свои эмоции</legend>
-          <textarea name="emotions">Можно прям в красках, не стесняясь в выражениях</textarea>
-          <button class="conclusion__btn" type="submit">Отправить форму</button>
-          <div class="conclusion__endnote"><span>*</span> - обязательные поля</div>
-        </fieldset>
-      </form>
-      <section class="popup popup--success popup--hidden">
-        <b class="popup__title">Ваша заявка отправлена</b>
-        <p class="popup__decription">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-        <button class="popup__btn popup__btn--success" type="button">Закрыть окно</button>
-      </section>
-      <section class="popup popup--failure popup--hidden">
-        <b class="popup__title">Что-то пошло не так!</b>
-        <p class="popup__decription">Проверьте поля, выделенные красным, скорее всего вы забыли их запомнить</p>
-        <button class="popup__btn popup__btn--failure" type="button">ок</button>
-      </section>
-      <footer class="page-footer">
-        <div class="page-footer__wrapper">
-          <a href="index.html" class="page-footer__logo">
-            <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="logo">
-          </a>
-          <ul class="social">
-            <li class="social__item social__item--tw"><a href="#">Twitter</a></li><!--
-            --><li class="social__item social__item--fb"><a href="#">Facebook</a></li><!--
-            --><li class="social__item social__item--youtube"><a href="#">YouTube</a></li><!--
-          --></ul>
-          <a href="https://htmlacademy.ru/" class="page-footer__developer">
-            <span>Разработано</span><img src="img/logo-htmlacademy.svg" width="27" height="34" alt="html-ac-logo">
-          </a>
-        </div>
-      </footer>
+      <div class="wrapper">
+        <form action="#" class="form">
+
+          <fieldset class="user-info">
+            <label for="name">Имя:</label>
+            <div class="user-info__input-container">
+              <input class="user-info__input" id="name" type="text" placeholder="Введите ваше имя" name="name">
+            </div>
+
+              <label for="family-name">Фамилия:</label>
+            <div class="user-info__input-container">
+              <input class="user-info__input" id="family-name" type="text" placeholder="Укажите фамилию" name="family-name">
+            </div>
+
+              <label for="patronymic">Отчество:</label>
+            <div class="user-info__input-container">
+              <input class="user-info__input" id="patronymic" type="text" placeholder="Ну и отчество тоже" name="patronymic">
+            </div>
+          </fieldset>
+
+
+          <fieldset class="achievement">
+            <legend class="achievement__title">Ваши безбашенные <br>достижения в путешествии</legend>
+            <div class="achievement__section">
+              <input id="achievement-1" type="checkbox" name="achievement" checked>
+              <label class="achievement__label" for="achievement-1">Сделал селфи с акулой</label><br>
+              <input id="achievement-2" type="checkbox" name="achievement" checked>
+              <label class="achievement__label" for="achievement-2">Обгорел на пляже</label><br>
+            </div><!--
+            --><div class="achievement__section">
+              <input id="achievement-3" type="checkbox" name="achievement">
+              <label class="achievement__label" for="achievement-3">Видел Чака Норриса</label><br>
+              <input id="achievement-4" type="checkbox" name="achievement">
+              <label class="achievement__label" for="achievement-4">Накупил сувениров</label><br>
+            </div><!--
+            --><div class="achievement__section">
+              <input id="achievement-5" type="checkbox" name="achievement" checked>
+              <label class="achievement__label" for="achievement-5">Удержал башню</label><br>
+              <input id="achievement-6" type="checkbox" name="achievement">
+              <label class="achievement__label" for="achievement-6">Разгромил отель</label><br>
+            </div><!--
+          --></fieldset>
+
+
+          <fieldset class="user-contacts">
+            <legend class="user-contacts__title">контактная информация</legend>
+
+            <div class="user-contacts__tel-section">
+              <label class="user-contacts__label user-contacts__label--mobile" for="tel">Номерок телефончика</label>
+              <input id="tel" type="tel" placeholder="Номер, пожалуйста" name="tel">
+              <label class="user-contacts__label user-contacts__label--tablet" for="tel">Номер телефона</label>
+            </div><!--
+
+            --><div class="user-contacts__email-section">
+              <label class="user-contacts__label user-contacts__label--mobile" for="adress">Адресок почты</label>
+              <input id="adress" type="email" placeholder="E-mail, пожалуйста" name="email">
+              <label class="user-contacts__label user-contacts__label--tablet" for="adress">Адрес почты</label>
+            </div>
+          </fieldset>
+
+
+          <fieldset class="used-app">
+            <legend class="used-app__title">С каким приложением путешествовали?</legend>
+            <input id="used-app-1" type="radio" name="used-app" checked>
+            <label class="used-app__label" for="used-app-1">Pink для iOS</label><br>
+            <input id="used-app-2" type="radio" name="used-app">
+            <label class="used-app__label" for="used-app-2">Pink на Android</label><br>
+            <input id="used-app-3" type="radio" name="used-app">
+            <label class="used-app__label" for="used-app-3">Windows Phone</label><br>
+          </fieldset>
+
+
+          <fieldset class="conclusion">
+            <legend class="conclusion__title">Опишите свои эмоции</legend>
+            <textarea name="emotions">Можно прям в красках, не стесняясь в выражениях</textarea>
+            <button class="conclusion__btn" type="submit">Отправить форму</button>
+            <div class="conclusion__endnote conclusion__endnote--tablet"><span>*</span> &#8212; обязательные поля</div>
+            <div class="conclusion__endnote conclusion__endnote--desktop"><span>*</span> &#8212; обязательные для заполнения поля</div>
+          </fieldset>
+
+
+        </form>
+        <section class="popup popup--success popup--hidden">
+          <b class="popup__title">Ваша заявка отправлена</b>
+          <p class="popup__decription">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+          <button class="popup__btn popup__btn--success" type="button">Закрыть окно</button>
+        </section>
+        <section class="popup popup--failure popup--hidden">
+          <b class="popup__title">Что-то пошло не так!</b>
+          <p class="popup__decription">Проверьте поля, выделенные красным, скорее всего вы забыли их запомнить</p>
+          <button class="popup__btn popup__btn--failure" type="button">ок</button>
+        </section>
+        <footer class="page-footer">
+          <div class="page-footer__wrapper">
+            <a href="index.html" class="page-footer__logo">
+              <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="logo">
+            </a>
+            <ul class="social">
+              <li class="social__item social__item--tw"><a href="#">Twitter</a></li><!--
+              --><li class="social__item social__item--fb"><a href="#">Facebook</a></li><!--
+              --><li class="social__item social__item--youtube"><a href="#">YouTube</a></li><!--
+            --></ul>
+            <a href="https://htmlacademy.ru/" class="page-footer__developer">
+              <span>Разработано</span><img src="img/logo-htmlacademy.svg" width="27" height="34" alt="html-ac-logo">
+            </a>
+          </div>
+        </footer>
+      </div>
     </div>
   </body>
 </html>

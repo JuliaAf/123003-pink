@@ -22,7 +22,7 @@
   }
   &__title {
     display: block;
-    margin-bottom: 35px;
+    margin-bottom: 41px;
 
     line-height: 18px;
     text-align: center;
@@ -40,5 +40,44 @@
   }
   input {
     display: none;
+  }
+}
+@media @tablet-width {
+  .used-app {
+    position: absolute;
+    top: 1045px;
+
+    width: 509px;
+    padding: 49px 50px 15px 61px;
+
+    .fieldset-border();
+
+    &__title {
+      margin-bottom: 0;
+      padding: 0 30px;
+    }
+
+    &__label {
+      margin-bottom: 39px;
+      margin-left: 0;
+    }
+    &__label::before {
+      margin-right: 23px;
+    }
+  }
+}
+@media @desktop-width {
+  .used-app {
+    top: 621px;
+    right: 129px;
+
+    width: 321px;
+    padding: 49px 0 15px 55px;
+    &__title {
+      white-space: nowrap;
+    }
+    &__label {
+      margin-left: 22px;
+    }
   }
 }

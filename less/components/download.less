@@ -1,5 +1,5 @@
 .download {
-  padding: 28px 0 33px 0;
+  padding: 28px 20px 33px 20px;
 
   font-weight: 300;
   font-size: 14px;
@@ -8,9 +8,9 @@
   color: @white-color;
 
   background: #1d2631;
-  &__wrapper {
-    .wrapper();
-  }
+  // &__wrapper {
+  //   .wrapper();
+  // }
   &__link {
     display: block;
     margin-bottom: 30px;
@@ -56,5 +56,45 @@
     height: 41px;
 
     background: url(../img/logo-microsoft.svg);
+  }
+}
+@media @tablet-width {
+  .download {
+    position: absolute;
+    top: 350px;
+
+    margin-left: 18px;
+
+    font-weight: 300;
+    font-size: 14px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+    white-space: nowrap;
+
+    background: none;
+    // &__wrapper {
+    //   width: 300px;
+    // }
+    &__link {
+      margin-bottom: 45px;
+    }
+    &__list {
+      margin-bottom: 40px;
+    }
+  }
+}
+@media @desktop-width {
+  .download {
+    top: 423px;
+
+    margin-left: 110px;
+    &__link {
+      margin-bottom: 67px;
+    }
+    &__list {
+      margin-bottom: 55px;
+    }
   }
 }
