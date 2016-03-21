@@ -60,7 +60,8 @@
     margin-bottom: 10px;
   }
   &__author--panorama,
-  &__description--panorama {
+  &__description--panorama,
+  &__like--panorama {
     padding: 0 38px;
   }
   &__liki--panorama {
@@ -123,15 +124,17 @@
     }
     &__like--panorama {
       position: absolute;
-      right: 80px;
+      right: 100px;
       bottom: 20px;
       left: auto;
+
+      padding: 0;
     }
     &__like--panorama::before {
       content: url(../img/icon-heart.svg);
       position: absolute;
       bottom: 13px;
-      left: 125px;
+      left: 108px;
     }
   }
 }
@@ -164,7 +167,7 @@
       padding: 0 148px;
     }
     &__like--panorama {
-      right: 175px;
+      right: 192px;
       bottom: -8px;
     }
     &--panorama::before {

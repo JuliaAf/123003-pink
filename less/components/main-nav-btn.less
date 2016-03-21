@@ -16,6 +16,7 @@
     top: 4px;
     left: 0;
 
+    display: block;
     width: 50px;
     height: 4px;
 
@@ -35,6 +36,28 @@
     border-top: 4px solid @white-color;
     border-bottom: 4px solid @white-color;
   }
+  &--close {
+    display: block;
+  }
+  &--close::before,
+  &--close::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -3px;
+    left: auto;
+
+    display: block;
+    width: 30px;
+    height: 4px;
+
+    background-color: @white-color;
+    border: 0;
+    transform: rotate(45deg);
+  }
+  &--close::after {
+    transform: rotate(-45deg);
+  }
 }
 @media @tablet-width {
   .main-nav-btn {
@@ -45,6 +68,11 @@
     &::before {
       top: 17px;
       left: -20px;
+    }
+    &--close::before,
+    &--close::after {
+      top: 27px;
+      left: 4px;
     }
   }
 }

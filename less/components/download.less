@@ -8,9 +8,7 @@
   color: @white-color;
 
   background: #1d2631;
-  // &__wrapper {
-  //   .wrapper();
-  // }
+
   &__link {
     display: block;
     margin-bottom: 30px;
@@ -25,7 +23,9 @@
     border-radius: 30px;
   }
   &__list {
+    margin: 0;
     margin-bottom: 22px;
+    padding: 0;
   }
   &__item {
     display: inline-block;
@@ -36,37 +36,30 @@
   &__item:last-child {
     margin-right: 0;
   }
-  &__item--apple a {
+  &__item a {
     display: block;
     width: 46px;
     height: 56px;
-
-    background: url(../img/logo-apple.svg);
+  }
+  &__item--apple a {
+    background: url(../img/logo-apple.svg) no-repeat center bottom;
   }
   &__item--android a {
-    display: block;
-    width: 42px;
-    height: 47px;
-
-    background: url(../img/logo-android.svg);
+    background: url(../img/logo-android.svg) no-repeat center bottom;
   }
   &__item--windows a {
-    display: block;
-    width: 43px;
-    height: 41px;
-
-    background: url(../img/logo-microsoft.svg);
+    background: url(../img/logo-microsoft.svg) no-repeat center bottom;
   }
 }
 @media @tablet-width {
   .download {
-    position: absolute;
-    top: 350px;
+    position: relative;
+    z-index: 10;
 
-    margin-left: 18px;
+    width: 43%;
+    margin-left: 20px;
 
     font-weight: 300;
-    font-size: 14px;
     font-size: 18px;
     line-height: 24px;
     text-align: center;
@@ -74,24 +67,21 @@
     white-space: nowrap;
 
     background: none;
-    // &__wrapper {
-    //   width: 300px;
-    // }
     &__link {
-      margin-bottom: 45px;
+      margin-bottom: 47px;
+      padding: 12px 0;
     }
     &__list {
-      margin-bottom: 40px;
+      margin-bottom: 35px;
     }
   }
 }
 @media @desktop-width {
   .download {
-    top: 423px;
-
-    margin-left: 110px;
+    width: 25%;
+    margin-left: 112px;
     &__link {
-      margin-bottom: 67px;
+      margin-bottom: 70px;
     }
     &__list {
       margin-bottom: 55px;

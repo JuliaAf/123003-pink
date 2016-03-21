@@ -2,17 +2,18 @@
   position: relative;
 
   min-height: 458px;
+  margin-bottom: 40px;
 
   color: @white-color;
 
   background: url(../img/bg-back-mobile.jpg);
 
   .clearfix();
-  &--photo-page,
-  &--form-page {
+  &--inner {
     min-height: 236px;
   }
   &__heading {
+    margin-bottom: 17px;
     padding: 18px 20px;
 
     background-color: rgba(0,0,0,0.3);
@@ -23,22 +24,28 @@
     float: left;
     padding-top: 4px;
   }
+  &__heading--inner {
+    margin-bottom: 27px;
+  }
   &__title {
-    margin-top: 22px;
-    margin-bottom: 30px;
+    margin-bottom: 312px;
 
     font-weight: 300;
     font-size: 24px;
     line-height: 30px;
     text-align: center;
   }
-  &__title--photo-page {
-    margin-top: 30px;
-    padding: 0 20px;
+  &__title--inner {
+    margin-bottom: 80px;
+    padding: 0 35px;
+  }
+  &__title--inner-form {
+    margin-bottom: 25px;
+    padding: 0 25px;
   }
   &__img {
     position: absolute;
-    bottom: 0;
+    bottom: 270px;
     left: 0;
 
     width: 258px;
@@ -49,30 +56,27 @@
 @media @tablet-width {
   .page-header {
     min-height: 730px;
+    margin-bottom: 57px;
     &__heading {
+      margin-bottom: 95px;
       padding: 38px 40px;
     }
+    &__heading--inner {
+      margin-bottom: 73px;
+    }
     &__title {
-      float: left;
-      margin-top: 97px;
+      margin-bottom: 5px;
       padding-right: 410px;
       padding-left: 94px;
 
       font-size: 40px;
       line-height: 47px;
     }
-    &__title--photo-page {
-      margin-top: 73px;
-      padding: 0 150px;
 
-      font-size: 50px;
-      line-height: 60px;
-    }
-    &__title--form-page {
+    &__title--inner {
       width: 500px;
       margin-top: 73px;
-      padding-right: 100px;
-      padding-left: 100px;
+      padding: 0 100px;
 
       font-size: 50px;
       line-height: 60px;
@@ -86,8 +90,7 @@
       height: 497px;
       margin-left: -138px;
     }
-    &--photo-page,
-    &--form-page {
+    &--inner {
       min-height: 440px;
       margin-bottom: 92px;
     }
@@ -96,17 +99,19 @@
 @media @desktop-width {
   .page-header {
     min-height: 853px;
-    &--photo-page {
+    margin-bottom: 67px;
+    &--inner {
       min-height: 395px;
+      margin-bottom: 90px;
     }
-    &--form-page {
-      min-height: 395px;
-    }
+
     &__heading {
+      margin-bottom: 106px;
       padding: 0;
       padding-left: 140px;
     }
-    &__heading--photo-page {
+    &__heading--inner {
+      margin-bottom: 60px;
       padding-left: 130px;
     }
     &__logo {
@@ -114,26 +119,23 @@
       padding: 42px 0;
     }
     &__title {
-      margin-top: 105px;
+      margin-bottom: 23px;
       padding-right: 795px;
       padding-left: 163px;
 
       font-size: 50px;
       line-height: 60px;
     }
-    &__title--photo-page {
-      margin-top: 61px;
-      padding-right: 400px;
-      padding-left: 400px;
+    &__title--inner {
+      width: auto;
+      margin-top: 0;
+      padding: 0 350px;
     }
-    &__title--form-page {
-      width: 100%;
-      margin-top: 60px;
-      padding: 0;
+    &__title--inner-form {
+      padding: 0 200px;
     }
-    &__title--form-page br:first-child {
-      display: none;
-    }
+
+
     &__img {
       bottom: 60px;
       left: 42%;

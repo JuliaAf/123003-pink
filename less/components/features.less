@@ -1,7 +1,5 @@
 .features {
-  max-height: 1010px;
   margin-bottom: 45px;
-  padding-top: 40px;
 
   text-align: center;
   color: @main-color;
@@ -48,7 +46,6 @@
   .features {
     position: relative;
 
-    padding: 60px 0;
     &__title {
       margin-bottom: 130px;
 
@@ -58,7 +55,6 @@
       line-height: 47px;
     }
     &__item {
-      float: right;
       margin-bottom: 18px;
       padding-left: 310px;
 
@@ -68,20 +64,20 @@
       margin-bottom: 18px;
     }
     &__img {
-      position: absolute;
-      top: 200px;
-      left: 0;
-
       width: 268px;
       height: 548px;
     }
-    &__effect {
+    &__img-container {
       position: absolute;
-      top: 723px;
-      left: -40px;
-      z-index: 2;
+      top: 145px;
+      left: 0;
 
-      padding: 60px 0 60px 40px;
+      height: 525px;
+      overflow: hidden;
+    }
+    &__effect {
+      margin-top: 80px;
+      margin-bottom: 100px;
 
       text-align: left;
 
@@ -106,8 +102,8 @@
 }
 @media @desktop-width {
   .features {
-    padding-top: 68px;
-    padding-bottom: 0;
+    margin-bottom: 255px;
+
     &__title {
       margin-bottom: 53px;
 
@@ -157,26 +153,33 @@
       height: 377px;
       margin-left: -92px;
     }
+    &__img-container {
+      position: absolute;
+      top: 0;
+      left: 132px;
+
+      height: 553px;
+      overflow: visible;
+    }
     &__item::before {
       content: "";
       position: absolute;
       bottom: 199px;
-      left: 4px;
+      left: -3px;
       z-index: 5;
 
       display: block;
-      width: 245px;
+      width: 263px;
       height: 80px;
 
       background: #ffffff;
-      box-shadow: 0 -7px 23px -8px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 30px -6px rgba(0, 0, 0, 0.8);
     }
     &__img--desktop {
       display: block;
     }
     &__effect {
-      top: 890px;
-      left: -40px;
+      margin-top: 40px;
     }
     &__effect-img {
       width: 302px;

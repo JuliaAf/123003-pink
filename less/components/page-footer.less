@@ -23,46 +23,40 @@
 }
 @media @tablet-width {
   .page-footer {
-    min-height: 90px;
-    padding-top: 35px;
-    padding-bottom: 0;
+    padding: 40px 0;
     &__logo,
     .social,
     &__developer {
       display: inline-block;
-      margin-right: 78px;
+      margin: 0 39px;
 
       vertical-align: middle;
+      text-align: center;
     }
-    .social {
-      margin-top: -15px;
-      margin-bottom: 0;
+    &__logo {
+      margin-left: 0;
     }
     &__developer {
-      margin-top: -10px;
       margin-right: 0;
     }
   }
 }
 @media @desktop-width {
   .page-footer {
-    min-height: 130px;
-    padding-top: 65px;
-
+    padding: 65px 0;
     &__logo,
     .social,
     &__developer {
-      margin-top: 0;
-      margin-right: 225px;
-      margin-bottom: 0;
-
-      vertical-align: middle;
+      margin: 0 119px;
+    }
+    &__logo {
+      margin-left: 0;
     }
     &__developer {
       margin-right: 0;
     }
+
     &__developer span {
-      font-size: 18px;
     }
   }
 }
