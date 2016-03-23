@@ -44,7 +44,7 @@
 }
 @media @tablet-width {
   .review {
-    margin-bottom: 100px;
+    margin-bottom: 103px;
 
     font-size: 18px;
     &__author--mobile {
@@ -53,19 +53,23 @@
     &__author--tablet {
       margin-bottom: 33px;
 
-      font-size: 24px;
+      font-size: 20px;
+      line-height: 32px;
     }
     &__author--tablet span {
       font-weight: normal;
-      font-size: 18px;
+      font-size: 14px;
     }
     &__cite {
-      margin-bottom: 40px;
+      margin-bottom: 30px;
       padding: 0;
     }
-    &__slider {
-      margin-top: 30px;
+    &__review-1,
+    &__review-2,
+    &__review-3 {
+      margin-bottom: 25px;
     }
+
     &__slider-item {
       margin-right: 12px;
     }
@@ -73,10 +77,18 @@
 }
 @media @desktop-width {
   .review {
-    margin-bottom: 192px;
+    margin-bottom: 185px;
     padding: 0 70px;
     &__cite {
+      margin-bottom: 35px;
       padding: 0 40px;
+    }
+    &__author--tablet {
+      font-size: 24px;
+      line-height: 30px;
+    }
+    &__author--tablet span {
+      font-size: 18px;
     }
     &__slider {
       display: none;
@@ -92,7 +104,7 @@
     &__slider-item-next::after {
       content: "";
       position: absolute;
-      top: -147px;
+      top: -175px;
       left: -75px;
 
       width: 30px;
@@ -102,7 +114,7 @@
       transform: rotate(-45deg);
     }
     &__slider-item-prev::after {
-      top: -127px;
+      top: -155px;
 
       transform: rotate(45deg);
     }
@@ -112,7 +124,7 @@
       transform: rotate(45deg);
     }
     &__slider-item-next::after {
-      top: -127px;
+      top: -155px;
       left: 844px;
     }
   }

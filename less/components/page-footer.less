@@ -1,15 +1,20 @@
 .page-footer {
-  padding-bottom: 45px;
+  padding-bottom: 12px;
 
   text-align: center;
-  &__logo {
-    display: inline-block;
-    margin-bottom: 30px;
+  &__logo,
+  .social,
+  &__developer {
+    display: block;
+    margin-bottom: 32px;
+
+    text-decoration: none;
+  }
+  .social {
+    margin-bottom: 40px;
   }
   &__developer span,
   &__developer img {
-    display: inline-block;
-
     vertical-align: middle;
   }
   &__developer span {
@@ -23,40 +28,24 @@
 }
 @media @tablet-width {
   .page-footer {
-    padding: 40px 0;
-    &__logo,
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px 0 38px 0;
+    &__developer,
     .social,
-    &__developer {
-      display: inline-block;
-      margin: 0 39px;
-
-      vertical-align: middle;
-      text-align: center;
-    }
     &__logo {
-      margin-left: 0;
-    }
-    &__developer {
-      margin-right: 0;
+      margin-bottom: 0;
     }
   }
 }
 @media @desktop-width {
   .page-footer {
-    padding: 65px 0;
-    &__logo,
-    .social,
-    &__developer {
-      margin: 0 119px;
-    }
-    &__logo {
-      margin-left: 0;
-    }
-    &__developer {
-      margin-right: 0;
-    }
-
+    padding: 65px 0 70px 0;
     &__developer span {
+      font-size: 18px;
     }
   }
 }

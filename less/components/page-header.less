@@ -14,15 +14,13 @@
   }
   &__heading {
     margin-bottom: 17px;
-    padding: 18px 20px;
+    padding: 18px 0;
 
     background-color: rgba(0,0,0,0.3);
-
-    .clearfix();
   }
   &__logo {
-    float: left;
-    padding-top: 4px;
+    display: block;
+    margin-top: 3px;
   }
   &__heading--inner {
     margin-bottom: 27px;
@@ -59,10 +57,15 @@
     margin-bottom: 57px;
     &__heading {
       margin-bottom: 95px;
-      padding: 38px 40px;
+      padding: 38px 0;
+
+      vertical-align: middle;
     }
     &__heading--inner {
       margin-bottom: 73px;
+    }
+    &__logo {
+      margin-top: 6px;
     }
     &__title {
       margin-bottom: 5px;
@@ -100,22 +103,25 @@
   .page-header {
     min-height: 853px;
     margin-bottom: 67px;
+    .wrapper {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
     &--inner {
       min-height: 395px;
       margin-bottom: 90px;
     }
-
     &__heading {
-      margin-bottom: 106px;
+      margin-bottom: 100px;
       padding: 0;
-      padding-left: 140px;
     }
     &__heading--inner {
-      margin-bottom: 60px;
-      padding-left: 130px;
+      margin-bottom: 55px;
+      padding: 0;
     }
     &__logo {
-      margin-right: 235px;
+      margin-right: 245px;
       padding: 42px 0;
     }
     &__title {
@@ -134,8 +140,6 @@
     &__title--inner-form {
       padding: 0 200px;
     }
-
-
     &__img {
       bottom: 60px;
       left: 42%;

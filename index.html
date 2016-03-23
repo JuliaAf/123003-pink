@@ -7,19 +7,22 @@
   </head>
   <body>
     <div class="container" style="outline:1px solid red;">
+
       <header class="page-header">
         <div class="page-header__heading">
-          <a href="index.html" class="page-header__logo">
-            <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="logo">
-          </a>
-          <a href="#" class="main-nav-btn"></a>
+          <div class="wrapper">
+            <a href="index.html" class="page-header__logo">
+              <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="logo">
+            </a>
+            <a href="#" class="main-nav-btn"></a>
 
-        <ul class="main-nav main-nav--hide">
-          <li class="main-nav__item"><a href="index.html">главная</a></li><!--
-          --><li class="main-nav__item"><a href="photo.html">фотографии</a></li><!--
-          --><li class="main-nav__item"><a href="form.html">конкурс</a></li><!--
-          --><li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML academy</a></li><!--
-        --></ul>
+            <ul class="main-nav main-nav--hide">
+              <li class="main-nav__item"><a href="index.html">главная</a></li>
+              <li class="main-nav__item"><a href="photo.html">фотографии</a></li>
+              <li class="main-nav__item"><a href="form.html">конкурс</a></li>
+              <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML academy</a></li>
+            </ul>
+          </div>
         </div>
 
         <h2 class="page-header__title">Взгляните на жизнь<br>иначе!</h2>
@@ -36,34 +39,51 @@
         </section>
       </header>
 
+
       <div class="wrapper">
+
         <section class="features">
           <h1 class="features__title">Устали от серости мегаполиса?<br> Нам есть, что вам<br> предложить!</h1>
+
           <div class="features__item">
-            <h3>Поднимает настроение</h3>
-            <p>Приложение позволит вам победить осенюю хандру и депрессию буквально в несколько кликов!</p>
-            <img class="features__img features__img--desktop" src="img/iphone-screen-mobile.png" width="157" height="320" alt="features__img">
-          </div><!--
-          --><div class="features__item">
-            <h3>Меняет мир вокруг</h3>
-            <p>Сделайте снимок и украсьте его смайликом или текстовой надписью, чтобы усилить эффект</p>
-            <img class="features__img features__img--desktop" src="img/iphone-screen-mobile.png" width="157" height="320" alt="features__img">
-          </div><!--
-          --><div class="features__item">
-            <h3>Заводит новых друзей</h3>
-            <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            <div class="features__description">
+              <h3>Поднимает настроение</h3>
+              <p>Приложение позволит вам победить осенюю хандру и депрессию буквально в несколько кликов!</p>
+            </div>
+            <div class="features__img-container">
+              <img class="features__img features__img--desktop" src="img/iphone-screen-mobile.png" width="157" height="320" alt="features__img">
+            </div>
+          </div>
+
+          <div class="features__item">
+            <div class="features__description">
+              <h3>Меняет мир вокруг</h3>
+              <p>Сделайте снимок и украсьте его смайликом или текстовой надписью, чтобы усилить эффект</p>
+            </div>
+            <div class="features__img-container">
+              <img class="features__img features__img--desktop" src="img/iphone-screen-mobile.png" width="157" height="320" alt="features__img">
+            </div>
+          </div>
+
+          <div class="features__item">
+            <div class="features__description">
+              <h3>Заводит<br> новых друзей</h3>
+              <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </div>
             <div class="features__img-container">
               <img class="features__img" src="img/iphone-screen-mobile.png" width="157" height="320" alt="features__img">
             </div>
-          </div><!--
-
-          --><div class="features__effect">
-            <img class="features__effect-img" src="../img/timer.png" alt="timer" width="240" height="277">
-            <span class="features__effect-title">Эффект<br> на 24 часа!</span>
-            <p class="features__effect-description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-            <a class="features__effect-link" href="#">Узнать больше об исследовании</a>
           </div>
         </section>
+
+
+        <section class="effect">
+          <img class="effect__img" src="../img/timer.png" alt="timer" width="240" height="277">
+          <span class="effect__title">Эффект<br> на 24 часа!</span>
+          <p class="effect__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="effect__link" href="#">Узнать больше об исследовании</a>
+        </section>
+
 
         <section class="review">
           <div class="review__review-1">
@@ -153,44 +173,40 @@
 
         <section class="contacts">
           <div class="wrapper">
-          <h2 class="contacts__title">Остались вопросы?<br> Свяжитесь с нами!</h2>
-          <div class="contacts__tel">
-            <h3>Звоните:</h3>
-            <a href="tel:+78125556666">+7 (812) 555-66-66</a>
-          </div><!--
-          --><div class="contacts__email">
-            <h3>Пишите:</h3>
-            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </div><!--
-          --><div class="contacts__adress">
-            <h3>Приезжайте в гости:</h3>
-            <span>ул. Большая<br>Конюшенная, 19/8</span>
-          </div><!--
-          --><div class="contacts__email contacts__email--desktop">
-            <h3>Пишите:</h3>
-            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </div><!--
-        --></div>
+            <h2 class="contacts__title">Остались вопросы?<br> Свяжитесь с нами!</h2>
+            <div class="contacts__tel">
+              <h3>Звоните:</h3>
+              <a href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </div>
+            <div class="contacts__email">
+              <h3>Пишите:</h3>
+              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </div>
+            <div class="contacts__adress">
+              <h3>Приезжайте в гости:</h3>
+              <span>ул. Большая<br>Конюшенная, 19/8</span>
+            </div>
+          </div>
           <div class="contacts__map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6000760813506!2d30.32172073647358!3d59.938778058850886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1454246306456"  allowfullscreen></iframe>
           </div>
         </section>
 
-        <footer class="page-footer page-footer--mobile">
-          <div class="wrapper">
+        <div class="wrapper">
+          <footer class="page-footer page-footer--mobile">
             <a href="index.html" class="page-footer__logo">
               <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="logo">
             </a>
             <ul class="social">
-              <li class="social__item social__item--tw"><a href="#">Twitter</a></li><!--
-              --><li class="social__item social__item--fb"><a href="#">Facebook</a></li><!--
-              --><li class="social__item social__item--youtube"><a href="#">YouTube</a></li><!--
-            --></ul>
-            <a href="https://htmlacademy.ru/" class="page-footer__developer">
+              <li class="social__item social__item--tw"><a href="#">Twitter</a></li>
+              <li class="social__item social__item--fb"><a href="#">Facebook</a></li>
+              <li class="social__item social__item--youtube"><a href="#">YouTube</a></li>
+            </ul>
+            <a class="page-footer__developer" href="https://htmlacademy.ru/">
               <span>Разработано</span><img src="img/logo-htmlacademy.svg" width="27" height="34" alt="html-ac-logo">
             </a>
-          </div>
-        </footer>
+          </footer>
+        </div>
       </div>
     <script src="js/main-nav-open.js"></script>
   </body>

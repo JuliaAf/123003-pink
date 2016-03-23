@@ -37,14 +37,14 @@
 @media @desktop-width {
   .main-nav {
     position: static;
-    &--hide {
-      display: block;
-    }
-    &__item {
-      display: inline-block;
-      margin-right: 80px;
 
-      vertical-align: middle;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    // &--hide {
+    //   display: block;
+    // }
+    &__item {
     }
     &__item a {
       padding: 42px 0;

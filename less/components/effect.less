@@ -1,0 +1,55 @@
+@media @mobile-width {
+  .effect {
+    display: none;
+  }
+}
+@media @tablet-width {
+  .effect {
+    width: 100%;
+    margin-bottom: 100px;
+
+    text-align: left;
+
+    background: #ffffff;
+
+    .clearfix();
+
+    &__img {
+      float: left;
+      padding-right: 70px;
+    }
+    &__title {
+      display: block;
+      margin-bottom: -5px;
+      padding-top: 36px;
+
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 37px;
+    }
+  }
+}
+@media @desktop-width {
+  .effect {
+    margin-bottom: 253px;
+    &__img {
+      width: 302px;
+      height: 344px;
+      padding-right: 65px;
+    }
+    &__title {
+      margin-bottom: 20px;
+      padding-top: 90px;
+    }
+    &__title br {
+      display: none;
+    }
+    &__description,
+    &__link {
+      margin-bottom: 30px;
+
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+}

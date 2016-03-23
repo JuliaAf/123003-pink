@@ -1,6 +1,6 @@
 .conclusion {
+  width: 100%;
   margin: 0;
-  margin-bottom: 55px;
   padding: 0;
 
   border: 0;
@@ -26,38 +26,16 @@
 
     resize: none;
   }
-  &__btn {
-    display: block;
-    width: 100%;
-    margin-bottom: 40px;
-    padding: 19px 0;
-
-    font-weight: bold;
-    font-size: 18px;
-    color: @white-color;
-    text-transform: uppercase;
-
-    background: #2aab6d;
-    border: 0;
-    border-radius: 3px;
-    outline: 0;
-  }
-  &__endnote {
-    text-align: center;
-    text-transform: uppercase;
-  }
-  &__endnote--desktop {
-    display: none;
-  }
-  &__endnote span {
-    color: @accent-color;
-  }
 }
 @media @tablet-width {
   .conclusion {
     position: relative;
 
-    margin-bottom: 170px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    order: 5;
+    margin-bottom: 65px;
     padding: 23px 57px 15px 57px;
 
     .fieldset-border();
@@ -69,42 +47,16 @@
       height: 150px;
       padding-right: 0;
     }
-    &__btn {
-      position: absolute;
-      bottom: -161px;
-      left: 0;
-
-      width: 48%;
-    }
-    &__endnote {
-      position: absolute;
-      right: -4px;
-      bottom: -104px;
-    }
   }
 }
 @media @desktop-width {
   .conclusion {
-    margin-bottom: 135px;
+    margin-bottom: 70px;
     padding-top: 20px;
     padding-bottom: 0;
     textarea {
       width: 97%;
       height: 85px;
-    }
-    &__btn {
-      bottom: -165px;
-
-      width: 300px;
-    }
-    &__endnote {
-      bottom: -108px;
-    }
-    &__endnote--tablet {
-      display: none;
-    }
-    &__endnote--desktop {
-      display: block;
     }
   }
 }

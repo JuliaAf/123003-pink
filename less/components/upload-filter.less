@@ -1,38 +1,40 @@
 .upload-filter {
   position: relative;
 
-  display: inline-block;
-  margin-bottom: 66px;
-  margin-left: 34px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-bottom: 65px;
+  padding: 0 20px;
+  &__container {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  &__icon {
+    width: 48px;
+    height: 48px;
 
-  vertical-align: middle;
-  &__icon--crop {
-    width: 50px;
-    height: 50px;
-
-    background: url(../img/icon-editor-crop.svg) no-repeat;
+    background: url(../img/icon-editor-crop.svg) no-repeat center center;
+    background-size: 100%;
   }
   &__icon--fill {
-    width: 45px;
-    height: 45px;
-
-    background: url(../img/icon-editor-fill.svg) no-repeat;
+    background: url(../img/icon-editor-fill.svg) no-repeat center center;
   }
   &__icon--contrast {
-    width: 31px;
-    height: 31px;
-
-    background: url(../img/icon-editor-contrast.svg) no-repeat;
+    background: url(../img/icon-editor-contrast.svg) no-repeat center center;
   }
   &__range {
     position: absolute;
-    bottom: -37px;
-    left: -15px;
+    top: 85px;
+    left: 0;
+
+    width: 85%;
+    margin-left: 7.5%;
   }
   &__bar {
     position: absolute;
 
-    width: 240px;
+    width: 100%;
     height: 2px;
 
     background: @main-color;
@@ -52,7 +54,7 @@
   }
 }
 @media @mobile-width {
-  .upload-filter__range--contrast,
+  .upload-filter__range--crop,
   .upload-filter__range--fill {
     display: none;
   }
@@ -61,112 +63,67 @@
   .upload-filter {
     position: relative;
 
-    display: block;
-    margin-bottom: 41px;
-    margin-left: 350px;
-    padding-top: 8px;
-    &::after {
-      content: "";
-      position: absolute;
-      top: 55px;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    margin-top: -12px;
+    margin-bottom: 45px;
+    padding: 0;
+    &__container {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      height: 70px;
 
-      width: 275px;
-      height: 1px;
-
-      background: #dddfe0;
+      border-bottom: 1px solid @border-color;
     }
-    &__icon--crop {
-      width: 24px;
-      height: 25px;
-      padding-bottom: 3px;
-
-      background-size: 100%;
-    }
-    &__icon--fill {
-      width: 22.5px;
-      height: 22.5px;
-      padding-bottom: 3px;
-
-      background-size: 100%;
-    }
-    &__icon--contrast {
-      width: 15.5px;
-      height: 15.5px;
-      padding-bottom: 10px;
+    &__icon {
+      width: 35px;
+      height: 35px;
+      margin-right: 27px;
+      margin-bottom: 0;
 
       background-size: 100%;
     }
     &__range {
-      bottom: 17px;
-      left: 49px;
+      position: static;
 
-      display: inline-block;
+      width: 100%;
+      //margin-right: 20px;
+      margin-left: 0;
     }
     &__bar {
-      width: 203px;
+      position: relative;
+    }
+    &__icon--contrast {
+      background-size: 70%;
     }
     &__toggle--crop {
-      right: 41px;
+      right: 40px;
     }
     &__toggle--fill {
-      right: 0;
-      left: 26px;
+      right: 160px;
     }
     &__toggle--contrast {
-      right: 92px;
+      right: 90px;
     }
   }
 }
 @media @desktop-width {
   .upload-filter {
-    margin-top: -4px;
-    margin-bottom: 20px;
-    margin-left: 468px;
-    padding: 0;
-    &::after {
-      top: 60px;
-
-      width: 410px;
-    }
-    &--contrast::after {
-      top: 50px;
-      left: -8px;
-    }
-
-    &--contrast {
-      margin-top: 25px;
-      margin-left: 475px;
-    }
-    &__icon--crop {
-      width: 48px;
-      height: 50px;
-    }
-    &__icon--fill {
-      width: 50px;
-      height: 50px;
-    }
-
-    &__icon--contrast {
-      width: 33px;
-      height: 33px;
+    margin-top: -16px;
+    &__icon {
+      width: 60px;
+      height: 60px;
+      margin-right: 50px;
     }
     &__range {
-      bottom: 28px;
-      left: 94px;
-    }
-    &__range--contrast {
-      bottom: 27px;
-      left: 87px;
-    }
-    &__bar {
-      width: 290px;
+      margin-right: 27px;
     }
     &__toggle--crop {
-      right: 205px;
+      right: 202px;
     }
     &__toggle--fill {
-      right: 29px;
-      left: auto;
+      right: 27px;
     }
     &__toggle--contrast {
       right: 115px;

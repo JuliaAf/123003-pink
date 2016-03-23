@@ -1,7 +1,11 @@
 .achievement {
+  position: relative;
+
+  width: 100%;
   margin: 0;
   margin-bottom: 32px;
   padding: 0;
+  padding-top: 65px;
 
   border: 0;
 
@@ -18,13 +22,9 @@
     border: 2px solid @border-color;
   }
   &__title {
-    display: block;
-    margin-bottom: 41px;
+    width: 100%;
 
-    line-height: 18px;
-    text-align: center;
-    color: @accent-color;
-    text-transform: uppercase;
+    .fieldset-title();
   }
   &__label {
     display: inline-block;
@@ -42,43 +42,64 @@
 
 @media @tablet-width {
   .achievement {
-    position: absolute;
-    top: 1783px;
-
-    width: 620px;
+    display: flex;
+    flex-flow: row wrap;
+    order: 4;
+    margin-bottom: 55px;
+    padding-top: 50px;
+    padding-left: 55px;
 
     .fieldset-border();
+
     &__title {
-      margin-bottom: 45px;
-      padding: 0 30px;
+      top: -10px;
+
+      width: auto;
     }
     &__title br {
       display: none;
     }
-    &__label {
-      margin-left: 58px;
+    &__input-container {
+      width: 100%;
     }
     &__label::before {
-      margin-right: 23px;
+      margin-right: 20px;
     }
   }
 }
 @media @desktop-width {
   .achievement {
-    top: 1210px;
-
+    justify-content: space-between;
     width: 940px;
-    padding-bottom: 8px;
+    padding: 55px 40px 8px 50px;
 
 
-    &__section {
-      display: inline-block;
-      //margin-right: 55px;
-
-      vertical-align: middle;
+    &__input-container {
+      max-width: 26%;
+    }
+    &__input-container:first-of-type {
+      order: 1;
+    }
+    &__input-container:nth-of-type(2) {
+      order: 4;
+    }
+    &__input-container:nth-of-type(3) {
+      order: 2;
+    }
+    &__input-container:nth-of-type(4) {
+      order: 5;
+    }
+    &__input-container:nth-of-type(5) {
+      order: 3;
+    }
+    &__input-container:last-of-type {
+      order: 6;
     }
     &__section:last-child {
       margin-right: 0;
+    }
+    &__label {
+      white-space: nowrap;
     }
   }
 }

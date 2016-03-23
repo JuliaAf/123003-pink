@@ -9,144 +9,195 @@
     <div class="container" style="outline:1px solid yellow">
       <header class="page-header page-header--inner">
         <div class="page-header__heading page-header__heading--inner">
-          <a href="index.html" class="page-header__logo">
-            <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="logo">
-          </a>
-          <a href="#" class="main-nav-btn" type="button"></a>
-          <ul class="main-nav main-nav--hide">
-            <li class="main-nav__item"><a href="index.html">главная</a></li>
-            <li class="main-nav__item"><a href="photo.html">фотографии</a></li>
-            <li class="main-nav__item"><a href="form.html">конкурс</a></li>
-            <li class="main-nav__item"><a href="https://htmlacademy.ru/">html academy</a></li>
-          </ul>
+          <div class="wrapper">
+            <a href="index.html" class="page-header__logo">
+              <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="logo">
+            </a>
+            <a href="#" class="main-nav-btn" type="button"></a>
+            <ul class="main-nav main-nav--hide">
+              <li class="main-nav__item"><a href="index.html">главная</a></li>
+              <li class="main-nav__item"><a href="photo.html">фотографии</a></li>
+              <li class="main-nav__item"><a href="form.html">конкурс</a></li>
+              <li class="main-nav__item"><a href="https://htmlacademy.ru/">html academy</a></li>
+            </ul>
+          </div>
         </div>
         <h1 class="page-header__title page-header__title--inner">Фотографии пользователей</h1>
       </header>
+
+
       <div class="intro intro--inner">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</div>
-      <article class="gallery-review gallery-review--panorama">
-        <a href="#">
-          <img src="img/panorama-mobile.jpg" width="320" height="135" alt="gallery-review" class=" gallery-review__img gallery-review__img--panorama">
-        </a>
-        <div class="gallery-review__wrapper gallery-review__wrapper--panorama">
-          <div class="gallery-review__author gallery-review__author--panorama"><b>Анна</b> <span>(5 минут назад)</span></div>
-          <p class="gallery-review__description gallery-review__description--panorama">Прыгать или нет? Напишите в коментарии свой совет
-          и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-          <a class="gallery-review__like gallery-review__like--panorama" href="#">Нравится: 215</a>
+
+
+      <section class="gallery">
+
+        <article class="gallery__item gallery__item--panorama">
+          <a href="#">
+            <img src="img/panorama-mobile.jpg" width="320" height="135" alt="gallery-review" class=" gallery__img gallery__img--panorama">
+          </a>
+          <div class="gallery__review gallery__review--panorama">
+            <div class="gallery__description gallery__description--panorama">
+              <div class="gallery__author gallery__author--panorama"><b>Анна</b> <span>(5 минут назад)</span>
+              </div>
+              <p>Прыгать или нет? Напишите в коментарии свой совет
+              и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            </div>
+            <a class="gallery__like gallery__like--panorama" href="#">Нравится: 215</a>
+          </div>
+        </article>
+
+        <div class="wrapper">
+          <article class="gallery__item">
+            <a href="#">
+              <img src="img/photo-1-mobile.jpg" alt="gallery" class="gallery__img">
+            </a>
+            <div class="gallery__review">
+              <div class="gallery__description">
+                <div class="gallery__author"><b>Левон</b> <span>(5 часов назад)</span></div>
+                <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              </div>
+              <a href="#" class="gallery__like">Нравится: 356</a>
+            </div>
+          </article>
+
+          <article class="gallery__item">
+            <a href="#">
+              <img src="img/photo-2-mobile.jpg" alt="gallery" class="gallery__img">
+            </a>
+            <div class="gallery__review">
+              <div class="gallery__description">
+                <div class="gallery__author"><b>Антон</b> <span>(12 часов назад)</span></div>
+                <p>Соседи будут рады!</p>
+              </div>
+              <a href="#" class="gallery__like">Нравится: 666</a>
+            </div>
+          </article>
+
+          <article class="gallery__item">
+            <a href="#">
+              <img src="img/photo-3-mobile.jpg" alt="gallery" class="gallery__img">
+            </a>
+            <div class="gallery__review">
+              <div class="gallery__description">
+                <div class="gallery__author"><b>Борис</b> <span>(20 часов назад)</span></div>
+                <p>Здесь могла быть ваша цитата о высоком и вечном</p>
+              </div>
+              <a href="#" class="gallery__like">Нравится: 215</a>
+            </div>
+          </article>
+
+          <article class="gallery__item">
+            <a href="#">
+              <img src="img/photo-4-mobile.jpg" alt="gallery" class="gallery__img">
+            </a>
+            <div class="gallery__review">
+              <div class="gallery__description">
+                <div class="gallery__author"><b>Сергей</b> <span>(25 часов назад)</span></div>
+                <p>Самая кубанская в мире!</p>
+              </div>
+              <a href="#" class="gallery__like">Нравится: 4</a>
+            </div>
+          </article>
+
+          <article class="gallery__item">
+            <a href="#">
+              <img src="img/photo-5-mobile.jpg" alt="gallery" class="gallery__img">
+            </a>
+            <div class="gallery__review">
+              <div class="gallery__description">
+                <div class="gallery__author"><b>Максим</b> <span>(40 часов назад)</span></div>
+                <p>Где снег-то?</p>
+              </div>
+              <a href="#" class="gallery__like">Нравится: 150</a>
+            </div>
+          </article>
+
+          <article class="gallery__item">
+            <a href="#">
+              <img src="img/photo-6-mobile.jpg" alt="gallery" class="gallery__img">
+            </a>
+            <div class="gallery__review">
+              <div class="gallery__description">
+                <div class="gallery__author"><b>Надежда</b> <span>(45 часов назад)</span></div>
+                <p>Всем GM и взаимные лайки</p>
+              </div>
+              <a href="#" class="gallery__like">Нравится: 2560</a>
+            </div>
+          </article>
         </div>
-      </article>
+      </section>
 
       <div class="wrapper">
-      <article class="gallery-review">
-        <a href="#">
-          <img src="img/photo-1-mobile.jpg" alt="gallery-review" class="gallery-review__img">
-        </a>
-        <div class="gallery-review__author"><b>Левон</b> <span>(5 часов назад)</span></div>
-        <p class="gallery-review__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-        <a href="#" class="gallery-review__like">Нравится: 356</a>
-      </article><!--
+        <section class="upload">
+          <div class="upload__title">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</div>
+          <img class="upload__img" src="img/photo-7-mobile.jpg" width="280" height="375" alt="upload-img">
 
-      --><article class="gallery-review">
-        <a href="#">
-          <img src="img/photo-2-mobile.jpg" alt="gallery-review" class="gallery-review__img">
-        </a>
-        <div class="gallery-review__author"><b>Антон</b> <span>(12 часов назад)</span></div>
-        <p class="gallery-review__description">Соседи будут рады!</p>
-        <a href="#" class="gallery-review__like">Нравится: 666</a>
-      </article><!--
 
-      --><article class="gallery-review">
-        <a href="#">
-          <img src="img/photo-3-mobile.jpg" alt="gallery-review" class="gallery-review__img">
-        </a>
-        <div class="gallery-review__author"><b>Борис</b> <span>(20 часов назад)</span></div>
-        <p class="gallery-review__description">Здесь могла быть ваша цитата о высоком и вечном</p>
-        <a href="#" class="gallery-review__like">Нравится: 215</a>
-      </article><!--
+          <form class="upload__form" action="#">
 
-      --><article class="gallery-review">
-        <a href="#">
-          <img src="img/photo-4-mobile.jpg" alt="gallery-review" class="gallery-review__img">
-        </a>
-        <div class="gallery-review__author"><b>Сергей</b> <span>(25 часов назад)</span></div>
-        <p class="gallery-review__description">Самая кубанская в мире!</p>
-        <a href="#" class="gallery-review__like">Нравится: 4</a>
-      </article><!--
+            <div class="upload-filter">
 
-      --><article class="gallery-review">
-        <a href="#">
-          <img src="img/photo-5-mobile.jpg" alt="gallery-review" class="gallery-review__img">
-        </a>
-        <div class="gallery-review__author"><b>Максим</b> <span>(40 часов назад)</span></div>
-        <p class="gallery-review__description">Где снег-то?</p>
-        <a href="#" class="gallery-review__like">Нравится: 150</a>
-      </article><!--
-
-      --><article class="gallery-review">
-        <a href="#">
-          <img src="img/photo-6-mobile.jpg" alt="gallery-review" class="gallery-review__img">
-        </a>
-        <div class="gallery-review__author"><b>Надежда</b> <span>(45 часов назад)</span></div>
-        <p class="gallery-review__description">Всем GM и взаимные лайки</p>
-        <a href="#" class="gallery-review__like">Нравится: 2560</a>
-      </article><!--
-
-      --><section class="upload">
-          <form action="#">
-            <div class="upload__title">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</div>
-            <img class="upload__img" src="img/photo-7-mobile.jpg" width="280" height="375" alt="upload-img">
-
-            <div class="upload-filter upload-filter--crop">
-              <div class="upload-filter__icon upload-filter__icon--crop">
-              </div>
-              <div class="upload-filter__range upload-filter__range--crop">
-                <div class="upload-filter__bar">
-                  <div class="upload-filter__toggle upload-filter__toggle--crop">
+              <div class="upload-filter__container">
+                <div class="upload-filter__icon upload-filter__icon--crop">
+                </div>
+                <div class="upload-filter__range upload-filter__range--crop">
+                  <div class="upload-filter__bar">
+                    <div class="upload-filter__toggle upload-filter__toggle--crop">
+                    </div>
                   </div>
                 </div>
               </div>
-            </div><!--
 
-            --><div class="upload-filter upload-filter--fill">
-              <div class="upload-filter__icon upload-filter__icon--fill">
-              </div>
-              <div class="upload-filter__range upload-filter__range--fill">
-                <div class="upload-filter__bar">
-                  <div class="upload-filter__toggle upload-filter__toggle--fill">
+              <div class="upload-filter__container">
+                <div class="upload-filter__icon upload-filter__icon--fill">
+                </div>
+                <div class="upload-filter__range upload-filter__range--fill">
+                  <div class="upload-filter__bar">
+                    <div class="upload-filter__toggle upload-filter__toggle--fill">
+                    </div>
                   </div>
                 </div>
               </div>
-            </div><!--
 
-            --><div class="upload-filter upload-filter--contrast">
-              <div class="upload-filter__icon upload-filter__icon--contrast">
-              </div>
-              <div class="upload-filter__range upload-filter__range--contrast">
-                <div class="upload-filter__bar">
-                  <div class="upload-filter__toggle upload-filter__toggle--contrast">
+              <div class="upload-filter__container">
+                <div class="upload-filter__icon upload-filter__icon--contrast">
+                </div>
+                <div class="upload-filter__range upload-filter__range--contrast">
+                  <div class="upload-filter__bar">
+                    <div class="upload-filter__toggle upload-filter__toggle--contrast">
+                    </div>
                   </div>
                 </div>
               </div>
-            </div><!--
 
-            --><hr>
-            <button type="submit" class="upload__make-btn">Запостить</button>
-            <button type="submit" class="upload__cancel-btn">Отмена</button>
+            </div>
+
+            <hr>
+            
+            <div class="upload__btn">
+              <button type="submit" class="upload__make-btn">Запостить</button>
+              <button type="submit" class="upload__cancel-btn">Отмена</button>
+            </div>
+
           </form>
+
         </section>
-      <footer class="page-footer">
-        <a href="index.html" class="page-footer__logo">
-          <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="logo">
-        </a>
-        <ul class="social">
-          <li class="social__item social__item--tw"><a href="#">Twitter</a></li><!--
-          --><li class="social__item social__item--fb"><a href="#">Facebook</a></li><!--
-          --><li class="social__item social__item--youtube"><a href="#">YouTube</a></li><!--
-        --></ul>
-        <a href="https://htmlacademy.ru/" class="page-footer__developer">
-          <span>Разработано</span><img src="img/logo-htmlacademy.svg" width="27" height="34" alt="html-ac-logo">
-        </a>
-      </footer>
+
+        <footer class="page-footer">
+          <a href="index.html" class="page-footer__logo">
+            <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="logo">
+          </a>
+          <ul class="social">
+            <li class="social__item social__item--tw"><a href="#">Twitter</a></li>
+            <li class="social__item social__item--fb"><a href="#">Facebook</a></li>
+            <li class="social__item social__item--youtube"><a href="#">YouTube</a></li>
+          </ul>
+          <a href="https://htmlacademy.ru/" class="page-footer__developer">
+            <span>Разработано</span><img src="img/logo-htmlacademy.svg" width="27" height="34" alt="html-ac-logo">
+          </a>
+        </footer>
       </div>
-    </div>
+      </div>
+    <script src="js/main-nav-open.js"></script>
   </body>
 </html>

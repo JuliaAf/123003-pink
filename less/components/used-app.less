@@ -1,7 +1,11 @@
 .used-app {
+  position: relative;
+
+  width: 100%;
   margin: 0;
   margin-bottom: 70px;
   padding: 0;
+  padding-top: 65px;
 
   border: 0;
 
@@ -21,13 +25,7 @@
     box-shadow: 0 0 0 2px @border-color;
   }
   &__title {
-    display: block;
-    margin-bottom: 41px;
-
-    line-height: 18px;
-    text-align: center;
-    color: @accent-color;
-    text-transform: uppercase;
+    .fieldset-title();
   }
   &__label {
     display: inline-block;
@@ -44,22 +42,22 @@
 }
 @media @tablet-width {
   .used-app {
-    position: absolute;
-    top: 1045px;
-
+    order: 2;
     width: 509px;
-    padding: 49px 50px 15px 61px;
+    margin-bottom: 65px;
+    padding: 57px 50px 15px 60px;
 
     .fieldset-border();
 
     &__title {
-      margin-bottom: 0;
-      padding: 0 30px;
+      top: -10px;
+    }
+    &__title br {
+      display: none;
     }
 
     &__label {
       margin-bottom: 39px;
-      margin-left: 0;
     }
     &__label::before {
       margin-right: 23px;
@@ -68,14 +66,8 @@
 }
 @media @desktop-width {
   .used-app {
-    top: 621px;
-    right: 129px;
-
-    width: 321px;
-    padding: 49px 0 15px 55px;
-    &__title {
-      white-space: nowrap;
-    }
+    width: 40%;
+    padding: 55px 0 20px 55px;
     &__label {
       margin-left: 22px;
     }
