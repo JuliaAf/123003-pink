@@ -1,24 +1,16 @@
 .gallery {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: flex-start;
   &__item {
     position: relative;
 
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-    width: 100%;
     margin-bottom: 40px;
   }
-  &__item--panorama {
-    position: relative;
-  }
+
   &__item--panorama::before {
     content: "панорама дня";
     position: absolute;
     top: 0;
-    right: 20px;
+    right: 0;
+    z-index: 5;
 
     padding: 6px 20px;
 
@@ -31,17 +23,12 @@
   }
   &__review {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: space-between;
     padding: 0 20px;
   }
   &__review--panorama {
-    padding: 0 38px;
-  }
-  &__description {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
+    padding: 0 15px 0 20px;
   }
   &__description p {
     margin: 0;
@@ -53,8 +40,10 @@
     margin-bottom: 10px;
   }
   &__img--panorama {
-    width: 100%;
+    width: 114.5%;
     height: 137px;
+
+    transform: translateX(-6.25%);
   }
   &__author span {
     font-weight: 300;
@@ -93,38 +82,46 @@
     }
     &__item {
       display: flex;
-      flex-direction: column;
+      flex-basis: 48%;
+      flex-flow: column wrap;
       justify-content: flex-start;
-      width: 48%;
       margin-bottom: 42px;
     }
     &__item--panorama {
       position: relative;
 
-      width: 100%;
+      flex-basis: 100%;
       margin-bottom: 65px;
     }
     &__item--panorama::before {
       top: 57px;
-      right: 40px;
+      right: 0;
     }
     &__img {
       height: 300px;
       margin-bottom: 15px;
     }
     &__img--panorama {
+      width: 113%;
       height: 510px;
       margin-bottom: 16px;
+
+      transform: translateX(-5.75%);
     }
     &__review {
       display: flex;
+      flex-flow: column nowrap;
       justify-content: space-between;
       min-height: 110px;
       padding: 0 25px;
     }
     &__review--panorama {
       min-height: auto;
-      padding: 0 68px;
+    }
+    &__description {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: flex-start;
     }
     &__like {
       display: flex;
@@ -139,7 +136,7 @@
     }
     &__like--panorama {
       position: absolute;
-      right: 100px;
+      right: 60px;
       bottom: 60px;
       left: auto;
 
@@ -166,27 +163,31 @@
       min-height: 110px;
     }
     &__item {
-      width: 31.7%;
+      flex-basis: 31.7%;
       margin-bottom: 77px;
     }
     &__img {
       height: 400px;
+    }
+    &__img--panorama {
+      width: 128.2%;
+
+      transform: translateX(-11%);
     }
     &__like {
       bottom: -68px;
     }
     &__review--panorama {
       min-height: auto;
-      padding: 0 156px;
     }
     &__item--panorama {
-      width: 100%;
+      flex-basis: 100%;
       margin-bottom: 65px;
       margin-left: 0;
     }
     &__item--panorama::before {
       top: 54px;
-      right: 130px;
+      right: 0;
     }
     &__img--panorama {
       height: 505px;
@@ -195,7 +196,7 @@
       padding: 0;
     }
     &__like--panorama {
-      right: 192px;
+      right: 60px;
       bottom: 35px;
     }
   }

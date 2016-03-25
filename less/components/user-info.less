@@ -1,10 +1,6 @@
 .user-info {
-  width: 100%;
-  margin: 0;
-  margin-bottom: 82px;
-  padding: 0;
+  margin-bottom: 57px;
 
-  border: 0;
   label {
     display: block;
     margin-bottom: 8px;
@@ -17,7 +13,7 @@
     box-sizing: border-box;
     width: 100%;
     margin-bottom: 20px;
-    padding: 16px 20px;
+    padding: 18px 20px;
 
     font-size: 18px;
     color: @main-color;
@@ -31,6 +27,7 @@
 @media @tablet-width {
   .user-info {
     display: flex;
+    flex-basis: 100%;
     flex-flow: column wrap;
     justify-content: space-between;
     order: 1;
@@ -41,7 +38,6 @@
       flex-flow: row nowrap;
     }
     &__input {
-      flex-grow: 1;
       margin-bottom: 10px;
       padding: 16px 25px;
 
@@ -58,8 +54,8 @@
 }
 @media @desktop-width {
   .user-info {
-    width: 46%;
-    margin-right: auto;
+    flex-basis: 46%;
+
     &__input {
       margin-bottom: 5px;
     }

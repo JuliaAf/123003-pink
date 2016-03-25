@@ -6,7 +6,7 @@
 @media @tablet-width {
   .effect {
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 85px;
 
     text-align: left;
 
@@ -27,11 +27,20 @@
       font-size: 30px;
       line-height: 37px;
     }
+    &__title,
+    &__description,
+    &__link {
+      width: 50%;
+      margin-left: auto;
+    }
+    &__link {
+      display: block;
+    }
   }
 }
 @media @desktop-width {
   .effect {
-    margin-bottom: 253px;
+    margin-bottom: 238px;
     &__img {
       width: 302px;
       height: 344px;
@@ -43,6 +52,12 @@
     }
     &__title br {
       display: none;
+    }
+    &__title,
+    &__description,
+    &__link {
+      width: 65%;
+      margin-left: auto;
     }
     &__description,
     &__link {

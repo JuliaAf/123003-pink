@@ -1,35 +1,50 @@
 .used-app {
   position: relative;
 
-  width: 100%;
-  margin: 0;
-  margin-bottom: 70px;
-  padding: 0;
+  margin-bottom: 60px;
   padding-top: 65px;
-
-  border: 0;
-
   &__label::before {
     content: "";
 
     display: inline-block;
     width: 15px;
     height: 15px;
-    margin-right: 30px;
+    margin-right: 35px;
 
     vertical-align: middle;
 
-    background: @accent-color;
+    background: @white-color;
     border: 10px solid @white-color;
     border-radius: 50%;
     box-shadow: 0 0 0 2px @border-color;
   }
+  &__input:checked + &__label::before {
+    background: @accent-color;
+  }
+  &__label:hover::before {
+    box-shadow: 0 0 0 2px @main-color;
+  }
+  &__label:active::before {
+    background: @accent-color;
+    box-shadow: 0 0 0 2px @accent-color;
+  }
+  &__input:checked + &__label:active::before {
+    background: @white-color;
+  }
   &__title {
-    .fieldset-title();
+    width: auto;
+    margin-bottom: 40px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: @accent-color;
+    text-transform: uppercase;
   }
   &__label {
     display: inline-block;
-    margin-bottom: 37px;
+    margin-bottom: 40px;
 
     font-size: 18px;
     vertical-align: middle;
@@ -42,12 +57,17 @@
 }
 @media @tablet-width {
   .used-app {
+    flex-basis: 100%;
     order: 2;
-    width: 509px;
     margin-bottom: 65px;
     padding: 57px 50px 15px 60px;
 
     .fieldset-border();
+    &__title {
+      margin-bottom: 0;
+
+      .fieldset-title();
+    }
 
     &__title {
       top: -10px;
@@ -66,7 +86,7 @@
 }
 @media @desktop-width {
   .used-app {
-    width: 40%;
+    flex-basis: 40%;
     padding: 55px 0 20px 55px;
     &__label {
       margin-left: 22px;

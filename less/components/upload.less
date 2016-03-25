@@ -1,23 +1,27 @@
 .upload {
-  display: flex;
-  flex-flow: row wrap;
-  margin-bottom: 70px;
+  margin-bottom: 45px;
+
+  background: #f2f2f2;
   &__title {
-    width: 100%;
-    padding: 23px 0 60px 0;
+    width: auto;
+    padding: 23px 20px 40px 20px;
 
     line-height: 30px;
     text-align: center;
+
+    background: @white-color;
   }
   &__img {
-    width: 100%;
+    width: auto;
     height: 375px;
-    margin-bottom: 40px;
+    padding: 20px 20px 15px 20px;
   }
   &__form {
     display: flex;
     flex-flow: column nowrap;
-    width: 100%;
+    width: auto;
+    margin: 0 auto;
+    padding: 20px 20px 40px 20px;
   }
   hr {
     width: 100%;
@@ -47,6 +51,8 @@
     border-radius: 30px;
   }
   &__cancel-btn {
+    margin-bottom: 0;
+
     color: #dddfe0;
 
     border-color: #dddfe0;
@@ -57,21 +63,25 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin-bottom: 22px;
+    margin-bottom: 5px;
     &__title {
-      margin-bottom: 65px;
+      flex-basis: 100%;
+      padding-bottom: 66px;
 
       font-size: 18px;
       line-height: 30px;
     }
     &__form {
+      flex-basis: 39%;
       justify-content: space-between;
-      width: 44%;
       height: 400px;
+      margin-right: 0;
+      padding: 60px 40px 55px 0;
     }
     &__img {
-      width: 48.5%;
+      flex-basis: 43%;
       height: 400px;
+      padding: 60px 0 55px 40px;
     }
     hr {
       display: none;
@@ -79,36 +89,40 @@
     &__btn {
       width: 95%;
     }
-    &__make-btn,
+    &__make-btn {
+      margin-bottom: 25px;
+    }
     &__cancel-btn {
-      margin-top: 25px;
-      margin-bottom: 0;
+      margin-top: 0;
     }
   }
 }
 @media @desktop-width {
   .upload {
-    margin-bottom: 50px;
+    margin-right: 130px;
+    margin-bottom: 30px;
+    margin-left: 130px;
     &__title {
-      padding: 3px 0 60px 0;
+      padding: 3px 0 65px 0;
     }
     &__form {
-      width: 43.5%;
-      margin-right: 6.4%;
-      margin-left: auto;
+      flex-basis: 44%;
+      padding: 60px 60px 60px 0;
     }
     &__img {
-      width: 32%;
-      margin-left: 8.5%;
+      flex-basis: 32%;
+      padding: 60px 0 60px 80px;
     }
     &__btn {
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
+      width: 100%;
     }
     &__make-btn,
     &__cancel-btn {
-      width: 48%;
+      flex-basis: 44%;
+      margin-bottom: 0;
     }
   }
 }

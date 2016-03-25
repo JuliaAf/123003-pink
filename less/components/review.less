@@ -9,6 +9,9 @@
   &__author {
     font-size: 18px;
   }
+  &__author span {
+    display: none;
+  }
   &__cite {
     margin: 15px 0 25px 0;
 
@@ -37,30 +40,33 @@
     display: none;
   }
 }
-@media @mobile-width {
-  .review__author--tablet {
-    display: none;
-  }
-}
+
 @media @tablet-width {
   .review {
+    display: flex;
+    flex-flow: column nowrap;
     margin-bottom: 103px;
 
     font-size: 18px;
-    &__author--mobile {
-      display: none;
+    &__review-1 {
+      display: flex;
+      flex-flow: column nowrap;
     }
-    &__author--tablet {
-      margin-bottom: 33px;
+
+    &__author {
+      order: 2;
 
       font-size: 20px;
       line-height: 32px;
     }
-    &__author--tablet span {
+    &__author  span {
+      display: inline;
+
       font-weight: normal;
       font-size: 14px;
     }
     &__cite {
+      order: 1;
       margin-bottom: 30px;
       padding: 0;
     }
@@ -77,7 +83,7 @@
 }
 @media @desktop-width {
   .review {
-    margin-bottom: 185px;
+    margin-bottom: 160px;
     padding: 0 70px;
     &__cite {
       margin-bottom: 35px;
