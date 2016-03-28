@@ -1,14 +1,10 @@
 .user-contacts {
-  margin: 0;
-  margin-bottom: 68px;
-  padding: 0;
-
-  border: 0;
+  margin-bottom: 25px;
   input,
-  label {
+  &__label {
     display: block;
   }
-  label {
+  &__label {
     display: block;
     margin-bottom: 8px;
     margin-left: 23px;
@@ -16,6 +12,7 @@
     color: @accent-color;
     text-transform: uppercase;
   }
+
   input {
     box-sizing: border-box;
     width: 100%;
@@ -28,5 +25,67 @@
     border: 2px solid @border-color;
     border-radius: 3px;
     outline: 0;
+  }
+}
+@media @mobile-width {
+  .user-contacts {
+    &__title {
+      display: none;
+    }
+  }
+}
+@media @tablet-width {
+  .user-contacts {
+    position: relative;
+
+    display: flex;
+    flex-basis: 100%;
+    flex-flow: column wrap;
+    order: 3;
+    margin-bottom: 65px;
+    padding: 45px 55px 0 55px;
+
+    .fieldset-border();
+    &__title {
+      .fieldset-title();
+    }
+    &__title {
+      top: -10px;
+    }
+    &__input-container {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+    &__label {
+      order: 2;
+      margin-bottom: 30px;
+    }
+    &__label span {
+      display: none;
+    }
+    input {
+      order: 1;
+      margin-bottom: 15px;
+    }
+  }
+}
+@media @desktop-width {
+  .user-contacts {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 65px;
+    padding-top: 40px;
+    input {
+      margin-bottom: 10px;
+    }
+    &__input-container {
+      flex-basis: 46%;
+    }
+    &__label {
+      margin-bottom: 22px;
+    }
+    &__label--tablet {
+      margin-bottom: 15px;
+    }
   }
 }

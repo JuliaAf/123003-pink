@@ -1,9 +1,36 @@
 .intro {
-  padding: 45px 35px 50px 35px;
+  padding: 5px 35px 50px 35px;
 
   line-height: 30px;
   text-align: center;
-  &--form-page {
-    padding: 45px 20px 8px 20px;
+  &--inner-form {
+    padding: 5px 25px 8px 25px;
+  }
+}
+@media @tablet-width {
+  .intro {
+    margin-bottom: 76px;
+    padding: 0 100px;
+
+    font-size: 18px;
+
+    &--inner {
+      margin-bottom: 77px;
+    }
+  }
+}
+
+@media @desktop-width {
+  .intro {
+    margin-bottom: 87px;
+    padding: 0 200px;
+
+    &--inner {
+      margin-bottom: 90px;
+      padding: 0 280px;
+    }
+    &--inner-form {
+      margin-bottom: 80px;
+    }
   }
 }

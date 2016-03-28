@@ -1,11 +1,13 @@
 .main-nav {
   position: absolute;
+  top: 69px;
+  left: 0;
   z-index: 5;
 
   width: 100%;
   margin: 0;
   padding: 0;
-  &--hidden {
+  &--hide {
     display: none;
   }
   &__item {
@@ -25,5 +27,33 @@
     background-color: @main-color;
     border-top: solid 1px rgba(255,255,255,0.15);
     border-bottom: solid 1px #000000;
+  }
+}
+@media @tablet-width {
+  .main-nav {
+    top: 108px;
+  }
+}
+@media @desktop-width {
+  .main-nav {
+    position: static;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    // &--hide {
+    //   display: block;
+    // }
+    &__item {
+    }
+    &__item a {
+      padding: 42px 0;
+
+      font-weight: 400;
+      text-transform: capitalize;
+
+      background: none;
+      border: 0;
+    }
   }
 }

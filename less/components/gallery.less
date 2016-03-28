@@ -1,0 +1,203 @@
+.gallery {
+  &__item {
+    position: relative;
+
+    margin-bottom: 40px;
+  }
+
+  &__item--panorama::before {
+    content: "панорама дня";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+
+    padding: 6px 20px;
+
+    font-weight: 700;
+    font-size: 12px;
+    color: @white-color;
+    text-transform: uppercase;
+
+    background: @accent-color;
+  }
+  &__review {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  &__review--panorama {
+    padding: 0 15px 0 20px;
+  }
+  &__description p {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  &__img {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 10px;
+  }
+  &__img--panorama {
+    width: 114.5%;
+    height: 137px;
+
+    transform: translateX(-6.25%);
+  }
+  &__author span {
+    font-weight: 300;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  &__like {
+    font-size: 12px;
+    color: @accent-color;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  &__like::before {
+    content: url(../img/icon-heart.svg);
+    position: relative;
+
+    width: 12px;
+    height: 11px;
+    margin-right: 17px;
+  }
+}
+
+
+
+
+@media @tablet-width {
+  .gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 23px;
+    .wrapper {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+    &__item {
+      display: flex;
+      flex-basis: 48%;
+      flex-flow: column wrap;
+      justify-content: flex-start;
+      margin-bottom: 42px;
+    }
+    &__item--panorama {
+      position: relative;
+
+      flex-basis: 100%;
+      margin-bottom: 65px;
+    }
+    &__item--panorama::before {
+      top: 57px;
+      right: 0;
+    }
+    &__img {
+      height: 300px;
+      margin-bottom: 15px;
+    }
+    &__img--panorama {
+      width: 113%;
+      height: 510px;
+      margin-bottom: 16px;
+
+      transform: translateX(-5.75%);
+    }
+    &__review {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+      min-height: 110px;
+      padding: 0 25px;
+    }
+    &__review--panorama {
+      min-height: auto;
+    }
+    &__description {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: flex-start;
+    }
+    &__like {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    &__like::before {
+      order: 2;
+      margin-right: 7px;
+    }
+    &__like--panorama {
+      position: absolute;
+      right: 60px;
+      bottom: 60px;
+      left: auto;
+
+      padding: 0;
+    }
+    &__like--panorama::before {
+      content: url(../img/icon-heart.svg);
+      position: absolute;
+      right: -38px;
+      bottom: 12px;
+    }
+  }
+}
+
+
+
+
+@media @desktop-width {
+  .gallery {
+    margin-bottom: 0;
+    &__review {
+      position: relative;
+
+      min-height: 110px;
+    }
+    &__item {
+      flex-basis: 31.7%;
+      margin-bottom: 77px;
+    }
+    &__img {
+      height: 400px;
+    }
+    &__img--panorama {
+      width: 128.2%;
+
+      transform: translateX(-11%);
+    }
+    &__like {
+      bottom: -68px;
+    }
+    &__review--panorama {
+      min-height: auto;
+    }
+    &__item--panorama {
+      flex-basis: 100%;
+      margin-bottom: 65px;
+      margin-left: 0;
+    }
+    &__item--panorama::before {
+      top: 54px;
+      right: 0;
+    }
+    &__img--panorama {
+      height: 505px;
+    }
+    &__author--panorama {
+      padding: 0;
+    }
+    &__like--panorama {
+      right: 60px;
+      bottom: 35px;
+    }
+  }
+}

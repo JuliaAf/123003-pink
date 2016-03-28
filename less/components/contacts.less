@@ -1,10 +1,8 @@
 .contacts {
-  text-align: center;
-  &__wrapper {
-    overflow: hidden;
+  width: 100%;
 
-    .wrapper();
-  }
+  text-align: center;
+
   &__title {
     margin-bottom: 35px;
 
@@ -21,9 +19,7 @@
   &__adress h3,
   &__tel h3 {
     display: block;
-    margin: 0;
     margin-bottom: 5px;
-    padding: 0;
 
     font-weight: 700;
     font-size: 18px;
@@ -43,7 +39,7 @@
     content: "";
     position: absolute;
     bottom: -60px;
-    left: -137px;
+    left: -157px;
 
     width: 595px;
     height: 61px;
@@ -52,9 +48,72 @@
   }
   &__map iframe {
     width: 100%;
-    height: 200px;
+    height: 220px;
 
     background-image: url(../img/bg-map.png);
     border: 0;
+  }
+}
+@media @tablet-width {
+  .contacts {
+    .wrapper {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+    &__title {
+      margin-bottom: 45px;
+
+      font-size: 40px;
+      line-height: 46px;
+    }
+    &__email,
+    &__tel,
+    &__adress {
+      flex-basis: 50%;
+      margin-bottom: 50px;
+    }
+    &__adress::after {
+      bottom: -106px;
+    }
+    &__map iframe {
+      height: 352px;
+    }
+  }
+}
+@media @desktop-width {
+  .contacts {
+    &__title {
+      width: 100%;
+      margin-bottom: 55px;
+
+      font-size: 50px;
+      line-height: 60px;
+    }
+    &__email,
+    &__tel,
+    &__adress {
+      flex-basis: 33.3%;
+
+      vertical-align: top;
+    }
+    &__email {
+      order: 3;
+    }
+    &__tel {
+      order: 1;
+    }
+    &__adress {
+      order: 2;
+    }
+
+    &__email h3,
+    &__tel h3,
+    &__adress h3 {
+      margin-bottom: 28px;
+    }
+    &__map iframe {
+      height: 470px;
+    }
   }
 }

@@ -1,6 +1,5 @@
 .conclusion {
   margin: 0;
-  margin-bottom: 55px;
   padding: 0;
 
   border: 0;
@@ -26,27 +25,39 @@
 
     resize: none;
   }
-  &__btn {
-    display: block;
-    width: 100%;
-    margin-bottom: 40px;
-    padding: 19px 0;
+}
+@media @tablet-width {
+  .conclusion {
+    position: relative;
 
-    font-weight: bold;
-    font-size: 18px;
-    color: @white-color;
-    text-transform: uppercase;
+    display: flex;
+    flex-basis: 100%;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    order: 5;
+    margin-bottom: 65px;
+    padding: 23px 57px 15px 57px;
 
-    background: #2aab6d;
-    border: 0;
-    border-radius: 3px;
-    outline: 0;
+    .fieldset-border();
+    &__title {
+      padding: 0 30px;
+    }
+    textarea {
+      width: 95%;
+      height: 150px;
+      padding-right: 0;
+    }
   }
-  &__endnote {
-    text-align: center;
-    text-transform: uppercase;
-  }
-  &__endnote span {
-    color: @accent-color;
+}
+@media @desktop-width {
+  .conclusion {
+    margin-bottom: 70px;
+    padding-top: 20px;
+    padding-bottom: 0;
+    textarea {
+      width: 97%;
+      height: 85px;
+      margin-bottom: 40px;
+    }
   }
 }

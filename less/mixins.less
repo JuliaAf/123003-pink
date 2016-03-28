@@ -7,11 +7,30 @@
     clear: both;
   }
 }
-
-.wrapper() {
-  width: 280px;
-  margin: 0 auto;
+.fieldset-border() {
+  border: 2px solid @border-color;
+  border-radius: 3px;
 }
+
+.fieldset-title() {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+
+  padding: 0 30px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: @accent-color;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  background-color: @white-color;
+  transform: translatex(-50%);
+}
+
 
 /*.placeholder() {
   ::-webkit-input-placeholder {

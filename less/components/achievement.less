@@ -1,11 +1,21 @@
 .achievement {
-  margin: 0;
-  margin-bottom: 32px;
-  padding: 0;
+  position: relative;
 
-  border: 0;
+  margin-bottom: 37px;
+  &__label {
+    display: inline-block;
+    margin-bottom: 43px;
 
-  label: :before {
+    font-size: 18px;
+    vertical-align: middle;
+
+    cursor: pointer;
+  }
+  input {
+    display: none;
+  }
+
+  &__label::before {
     content: "";
 
     display: inline-block;
@@ -17,23 +27,99 @@
 
     border: 2px solid @border-color;
   }
-  &__title {
-    display: block;
-    margin-bottom: 35px;
+  &__input:checked + &__label::before {
+    background: url(../img/icon-yes.png) no-repeat center center;
+  }
+  &__label:hover::before {
+    border: 2px solid @main-color;
+  }
+  &__label:active::before {
+    background: url(../img/icon-yes.png) no-repeat center center;
+    border: 2px solid @accent-color;
 
+    fill: #000000;
+  }
+  &__input:checked + &__label:active::before {
+    background: none;
+    border: 2px solid @accent-color;
+  }
+  &__title {
+    width: auto;
+    margin-bottom: 40px;
+
+    font-weight: 400;
+    font-size: 14px;
     line-height: 18px;
     text-align: center;
     color: @accent-color;
     text-transform: uppercase;
   }
-  label {
-    display: inline-block;
-    margin-bottom: 44px;
+}
 
-    font-size: 18px;
-    vertical-align: middle;
+@media @tablet-width {
+  .achievement {
+    display: flex;
+    flex-flow: row wrap;
+    order: 4;
+    margin-bottom: 60px;
+    padding-top: 52px;
+    padding-left: 57px;
+
+    .fieldset-border();
+
+    &__title {
+      width: auto;
+      margin-bottom: 0;
+
+      .fieldset-title();
+    }
+    &__title {
+      top: -10px;
+    }
+    &__title br {
+      display: none;
+    }
+    &__input-container {
+      width: 100%;
+    }
+    &__label::before {
+      margin-right: 20px;
+    }
   }
-  input {
-    display: none;
+}
+@media @desktop-width {
+  .achievement {
+    justify-content: space-between;
+    width: 940px;
+    padding: 50px 0 12px 57px;
+
+
+    &__input-container {
+      flex-basis: 30%;
+    }
+    &__input-container:first-of-type {
+      order: 1;
+    }
+    &__input-container:nth-of-type(2) {
+      order: 4;
+    }
+    &__input-container:nth-of-type(3) {
+      order: 2;
+    }
+    &__input-container:nth-of-type(4) {
+      order: 5;
+    }
+    &__input-container:nth-of-type(5) {
+      order: 3;
+    }
+    &__input-container:last-of-type {
+      order: 6;
+    }
+    &__section:last-child {
+      margin-right: 0;
+    }
+    &__label {
+      white-space: nowrap;
+    }
   }
 }
