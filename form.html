@@ -12,9 +12,20 @@
         <div class="page-header__heading page-header__heading--inner">
           <div class="wrapper">
             <a href="index.html" class="page-header__logo">
-              <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="logo">
+              <picture>
+                <source
+                       media="(min-width: 1200px)"
+                       srcset="img/logo-pink-white-desktop.svg" width="150" height="45">
+                </source>
+                <source
+                       media="(min-width: 700px)"
+                       srcset="img/logo-pink-white-tablet.svg" width="150" height="150">
+                </source>
+                <img
+                       src="img/logo-pink-white-mobile.svg" alt="logo">
+              </picture>
             </a>
-            <a href="#" class="main-nav-btn" type="button"></a>
+            <a href="#" class="main-nav-btn"></a>
             <ul class="main-nav main-nav--hide">
               <li class="main-nav__item"><a href="index.html">главная</a></li>
               <li class="main-nav__item"><a href="photo.html">фотографии</a></li>

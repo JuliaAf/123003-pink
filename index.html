@@ -6,13 +6,28 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <!-- <svg style="display:none;">
+      <symbol>
+      </symbol>
+    </svg> -->
     <div class="container" style="outline:1px solid red;">
 
       <header class="page-header">
         <div class="page-header__heading">
           <div class="wrapper">
             <a href="index.html" class="page-header__logo">
-              <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="logo">
+              <picture>
+                <source
+                       media="(min-width: 1200px)"
+                       srcset="img/logo-pink-white-desktop.svg" width="150" height="45">
+                </source>
+                <source
+                       media="(min-width: 700px)"
+                       srcset="img/logo-pink-white-tablet.svg" width="150" height="45">
+                </source>
+                <img
+                       src="img/logo-pink-white-mobile.svg" alt="logo">
+              </picture>
             </a>
             <a href="#" class="main-nav-btn"></a>
 
@@ -26,15 +41,29 @@
         </div>
 
         <h2 class="page-header__title">Взгляните на жизнь<br>иначе!</h2>
-        <img class="page-header__img" src="img/iphone-hand-mobile.png" width="258" height="286" alt="page-header__img">
+        <picture>
+          <source
+                  media="(min-width: 1200px)"
+                  srcset="img/iphone-hand-desktop@1x.png 1x,
+                          img/iphone-hand-desktop@2x.png 2x">
+          </source>
+          <source
+                  media="(min-width: 700px)"
+                  srcset="img/iphone-hand-tablet@1x.png 1x,
+                          img/iphone-hand-tablet@2x.png 2x">
+          </source>
+          <img class="page-header__img"
+                  src="img/iphone-hand-mobile.png" width="258" height="286" alt="page-header__img"
+                  srcset="img/iphone-hand-mobile@2x 2x.png">
+        </picture>
 
         <section class="download">
           <a href="#" class="download__link">Скачать приложение</a>
           <ul class="download__list">
-            <li class="download__item download__item--apple"><a href="#"></a></li><!--
-            --><li class="download__item download__item--android"><a href="#"></a></li><!--
-            --><li class="download__item download__item--windows"><a href="#"></a></li><!--
-          --></ul>
+            <li class="download__item download__item--apple"><a href="#"></a></li>
+            <li class="download__item download__item--android"><a href="#"></a></li>
+            <li class="download__item download__item--windows"><a href="#"></a></li>
+          </ul>
           <span>Доступно для iPhone, iPad, Android, <br>Windows Phone, OS X, Windows 8</span>
         </section>
       </header>
@@ -51,7 +80,21 @@
               <p>Приложение позволит вам победить осенюю хандру и депрессию буквально в несколько кликов!</p>
             </div>
             <div class="features__img-container">
-              <img class="features__img features__img--desktop" src="img/iphone-screen-mobile.png" width="157" height="320" alt="features__img">
+              <picture>
+                <source
+                        media="(min-width: 1200px)"
+                        srcset="img/iphone-screen-desktop-1@1x.png 1x,
+                                img/iphone-screen-desktop-1@2x.png 2x">
+                </source>
+                <source
+                        media="(min-width: 700px)"
+                        srcset="img/iphone-screen-tablet-1@1x.png 1x,
+                                img/iphone-screen-tablet-1@2x.png 2x">
+                </source>
+                <img class="features__img features__img--desktop"
+                        src="img/iphone-screen-mobile.png" width="157" height="320" alt="features__img"
+                        srcset="img/iphone-screen-mobile@2x.png 2x">
+            </picture>
             </div>
           </div>
 
@@ -61,7 +104,21 @@
               <p>Сделайте снимок и украсьте его смайликом или текстовой надписью, чтобы усилить эффект</p>
             </div>
             <div class="features__img-container">
-              <img class="features__img features__img--desktop" src="img/iphone-screen-mobile.png" width="157" height="320" alt="features__img">
+              <picture>
+                <source
+                        media="(min-width: 1200px)"
+                        srcset="img/iphone-screen-desktop-2@1x.png 1x,
+                                img/iphone-screen-desktop-2@2x.png 2x">
+                </source>
+                <source
+                        media="(min-width: 700px)"
+                        srcset="img/iphone-screen-tablet-2@1x.png 1x,
+                                img/iphone-screen-tablet-2@2x.png 2x">
+                </source>
+                <img class="features__img features__img--desktop"
+                        src="img/iphone-screen-mobile.png" width="157" height="320" alt="features__img"
+                        srcset="img/iphone-screen-mobile@2x.png 2x">
+              </picture>
             </div>
           </div>
 
@@ -71,14 +128,28 @@
               <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </div>
             <div class="features__img-container">
-              <img class="features__img" src="img/iphone-screen-mobile.png" width="157" height="320" alt="features__img">
+              <picture>
+                <source
+                        media="(min-width: 1200px)"
+                        srcset="img/iphone-screen-desktop-3@1x.png 1x,
+                                img/iphone-screen-desktop-3@2x.png 2x">
+                </source>
+                <source
+                        media="(min-width: 700px)"
+                        srcset="img/iphone-screen-tablet-3@1x.png 1x,
+                                img/iphone-screen-tablet-3@2x.png 2x">
+                </source>
+                <img class="features__img"
+                        src="img/iphone-screen-mobile.png" width="157" height="320" alt="features__img"
+                        srcset="img/iphone-screen-mobile@2x.png 2x">
+              </picture>
             </div>
           </div>
         </section>
 
 
         <section class="effect">
-          <img class="effect__img" src="../img/timer.png" alt="timer" width="240" height="277">
+          <img class="effect__img" src="../img/sprite/timer.svg" alt="timer" width="240" height="277">
           <span class="effect__title">Эффект<br> на 24 часа!</span>
           <p class="effect__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
           <a class="effect__link" href="#">Узнать больше об исследовании</a>

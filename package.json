@@ -19,7 +19,10 @@
     "gulp": "3.9.1",
     "gulp-less": "3.0.5",
     "gulp-plumber": "1.1.0",
-    "gulp-postcss": "6.1.0"
+    "gulp-postcss": "6.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-svgmin": "^1.2.2",
+    "gulp-svgstore": "^6.0.0"
   },
   "scripts": {
     "test": "editorconfig-tools check *",

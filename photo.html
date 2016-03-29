@@ -11,9 +11,20 @@
         <div class="page-header__heading page-header__heading--inner">
           <div class="wrapper">
             <a href="index.html" class="page-header__logo">
-              <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="logo">
+              <picture>
+                <source
+                       media="(min-width: 1200px)"
+                       srcset="img/logo-pink-white-desktop.svg" width="150" height="45">
+                </source>
+                <source
+                       media="(min-width: 700px)"
+                       srcset="img/logo-pink-white-tablet.svg" width="150" height="150">
+                </source>
+                <img
+                       src="img/logo-pink-white-mobile.svg" alt="logo">
+              </picture>
             </a>
-            <a href="#" class="main-nav-btn" type="button"></a>
+            <a href="#" class="main-nav-btn"></a>
             <ul class="main-nav main-nav--hide">
               <li class="main-nav__item"><a href="index.html">главная</a></li>
               <li class="main-nav__item"><a href="photo.html">фотографии</a></li>
@@ -33,7 +44,18 @@
 
           <article class="gallery__item gallery__item--panorama">
             <a href="#">
-              <img src="img/panorama-mobile.jpg" width="320" height="135" alt="gallery-review" class=" gallery__img gallery__img--panorama">
+              <picture>
+                <source media="(min-width:1200px)"
+                        srcset="img/panorama-desktop.jpg 1x,
+                                img/panorama-desktop@2x.jpg 2x">
+                </source>
+                <source media="(min-width:700px)"
+                        srcset="img/panorama-tablet.jpg 1x,
+                                img/panorama-tablet@2x.jpg 2x">
+                </source>
+                <img    src="img/panorama-mobile.jpg" width="320" height="135" alt="gallery-review" class=" gallery__img gallery__img--panorama"
+                        srcset="img/panorama-mobile@2x.jpg 2x">
+            </picture>
             </a>
             <div class="gallery__review gallery__review--panorama">
               <div class="gallery__description gallery__description--panorama">
@@ -48,7 +70,20 @@
 
           <article class="gallery__item">
             <a href="#">
-              <img src="img/photo-1-mobile.jpg" alt="gallery" class="gallery__img">
+              <picture>
+                <source
+                        media="(min-width:1200px)"
+                        srcset="img/photo-1-desktop.jpg 1x,
+                                img/photo-1-desktop@2x.jpg 2x">
+                </source>
+                <source
+                        media="(min-width:700px)"
+                        srcset="img/photo-1-tablet.jpg 1x,
+                                img/photo-1-tablet@2x.jpg 2x">
+                </source>
+                <img    src="img/photo-1-mobile.jpg" alt="gallery" class="gallery__img"
+                        srcset="img/photo-1-mobile@2x.jpg">
+              </picture>
             </a>
             <div class="gallery__review">
               <div class="gallery__description">
@@ -61,7 +96,20 @@
 
           <article class="gallery__item">
             <a href="#">
-              <img src="img/photo-2-mobile.jpg" alt="gallery" class="gallery__img">
+              <picture>
+                <source
+                        media="(min-width:1200px)"
+                        srcset="img/photo-2-desktop.jpg 1x,
+                                img/photo-2-desktop@2x.jpg 2x">
+                </source>
+                <source
+                        media="(min-width:700px)"
+                        srcset="img/photo-2-tablet.jpg 1x,
+                                img/photo-2-tablet@2x.jpg 2x">
+                </source>
+                <img    src="img/photo-2-mobile.jpg" alt="gallery" class="gallery__img"
+                        srcset="img/photo-2-mobile@2x.jpg">
+              </picture>
             </a>
             <div class="gallery__review">
               <div class="gallery__description">
@@ -74,7 +122,20 @@
 
           <article class="gallery__item">
             <a href="#">
-              <img src="img/photo-3-mobile.jpg" alt="gallery" class="gallery__img">
+              <picture>
+                <source
+                        media="(min-width:1200px)"
+                        srcset="img/photo-3-desktop.jpg 1x,
+                                img/photo-3-desktop@2x.jpg 2x">
+                </source>
+                <source
+                        media="(min-width:700px)"
+                        srcset="img/photo-3-tablet.jpg 1x,
+                                img/photo-3-tablet@2x.jpg 2x">
+                </source>
+                <img    src="img/photo-3-mobile.jpg" alt="gallery" class="gallery__img"
+                        srcset="img/photo-3-mobile@2x.jpg">
+              </picture>
             </a>
             <div class="gallery__review">
               <div class="gallery__description">
@@ -87,7 +148,20 @@
 
           <article class="gallery__item">
             <a href="#">
-              <img src="img/photo-4-mobile.jpg" alt="gallery" class="gallery__img">
+              <picture>
+                <source
+                        media="(min-width:1200px)"
+                        srcset="img/photo-4-desktop.jpg 1x,
+                                img/photo-4-desktop@2x.jpg 2x">
+                </source>
+                <source
+                        media="(min-width:700px)"
+                        srcset="img/photo-4-tablet.jpg 1x,
+                                img/photo-4-tablet@2x.jpg 2x">
+                </source>
+                <img    src="img/photo-4-mobile.jpg" alt="gallery" class="gallery__img"
+                        srcset="img/photo-4-mobile@2x.jpg">
+              </picture>
             </a>
             <div class="gallery__review">
               <div class="gallery__description">
@@ -100,7 +174,20 @@
 
           <article class="gallery__item">
             <a href="#">
-              <img src="img/photo-5-mobile.jpg" alt="gallery" class="gallery__img">
+              <picture>
+                <source
+                        media="(min-width:1200px)"
+                        srcset="img/photo-5-desktop.jpg 1x,
+                                img/photo-5-desktop@2x.jpg 2x">
+                </source>
+                <source
+                        media="(min-width:700px)"
+                        srcset="img/photo-5-tablet.jpg 1x,
+                                img/photo-5-tablet@2x.jpg 2x">
+                </source>
+                <img    src="img/photo-5-mobile.jpg" alt="gallery" class="gallery__img"
+                        srcset="img/photo-5-mobile@2x.jpg">
+              </picture>
             </a>
             <div class="gallery__review">
               <div class="gallery__description">
@@ -113,7 +200,20 @@
 
           <article class="gallery__item">
             <a href="#">
-              <img src="img/photo-6-mobile.jpg" alt="gallery" class="gallery__img">
+              <picture>
+                <source
+                        media="(min-width:1200px)"
+                        srcset="img/photo-6-desktop.jpg 1x,
+                                img/photo-6-desktop@2x.jpg 2x">
+                </source>
+                <source
+                        media="(min-width:700px)"
+                        srcset="img/photo-6-tablet.jpg 1x,
+                                img/photo-6-tablet@2x.jpg 2x">
+                </source>
+                <img    src="img/photo-6-mobile.jpg" alt="gallery" class="gallery__img"
+                        srcset="img/photo-6-mobile@2x.jpg">
+              </picture>
             </a>
             <div class="gallery__review">
               <div class="gallery__description">
@@ -123,14 +223,29 @@
               <a href="#" class="gallery__like">Нравится: 2560</a>
             </div>
           </article>
-        </div>
-      </section>
+        </section>
+      </div>
 
 
         <section class="upload">
           <div class="upload__title">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</div>
 
-          <img class="upload__img" src="img/photo-7-mobile.jpg" width="280" height="375" alt="upload-img">
+          <picture>
+            <source
+                    media="(min-width:1200px)"
+                    srcset="img/photo-7-desktop.jpg 1x,
+                            img/photo-7-desktop@2x.jpg 2x">
+            </source>
+            <source
+                    media="(min-width:700px)"
+                    srcset="img/photo-7-tablet.jpg 1x,
+                            img/photo-7-tablet@2x.jpg 2x">
+            </source>
+            <img    src="img/photo-7-mobile.jpg" class="upload__img" width="280" height="375" alt="upload-img"
+                    srcset="img/photo-1-mobile@2x.jpg">
+          </picture>
+
+
           <form class="upload__form" action="#">
 
             <div class="upload-filter">

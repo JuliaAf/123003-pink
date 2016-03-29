@@ -7,8 +7,12 @@
   color: @white-color;
 
   background: url(../img/bg-back-mobile.jpg);
+  background-position: center 0;
 
-  .clearfix();
+
+  @media(resolution: 1.5dppx) {
+    background: url(../img/bg-back-mobile@2x.jpg);
+  }
   &--inner {
     min-height: 236px;
   }
@@ -20,6 +24,8 @@
   }
   &__logo {
     display: block;
+    width: 75px;
+    height: 22px;
     margin-top: 3px;
   }
   &__heading--inner {
@@ -55,9 +61,18 @@
   .page-header {
     min-height: 730px;
     margin-bottom: 57px;
+
+    background: url(../img/bg-back-tablet@1x.jpg);
+    background-position: center 0;
+
+
+    @media(resolution: 1.5dppx) {
+      background: url(../img/bg-back-tablet@2x.jpg);
+    }
+
     &__heading {
       margin-bottom: 95px;
-      padding: 38px 0;
+      padding: 20px 0 35px 0;
 
       vertical-align: middle;
     }
@@ -65,6 +80,8 @@
       margin-bottom: 73px;
     }
     &__logo {
+      width: 150px;
+      height: 50px;
       margin-top: 6px;
     }
     &__title {
@@ -85,13 +102,12 @@
       line-height: 60px;
     }
     &__img {
-      position: absolute;
-      bottom: 50px;
+      bottom: 0;
       left: 50%;
 
-      width: 450px;
-      height: 497px;
-      margin-left: -138px;
+      width: 702px;
+      height: 547px;
+      margin-left: -350px;
     }
     &--inner {
       min-height: 440px;
@@ -103,6 +119,15 @@
   .page-header {
     min-height: 853px;
     margin-bottom: 67px;
+
+    background: url(../img/bg-back-desktop.jpg);
+    background-position: center 0;
+
+
+    @media(resolution: 1.5dppx) {
+      background: url(../img/bg-back-desktop@2x.jpg);
+      /*такой картинки нет в пакете от кекса*/
+    }
     .wrapper {
       display: flex;
       flex-flow: row nowrap;
@@ -113,7 +138,7 @@
       margin-bottom: 90px;
     }
     &__heading {
-      margin-bottom: 100px;
+      margin-bottom: 110px;
       padding: 0;
     }
     &__heading--inner {
@@ -121,8 +146,8 @@
       padding: 0;
     }
     &__logo {
-      margin-right: 245px;
-      padding: 42px 0;
+      margin-right: 170px;
+      padding: 22px 0;
     }
     &__title {
       margin-bottom: 23px;
@@ -141,12 +166,11 @@
       padding: 0 200px;
     }
     &__img {
-      bottom: 60px;
-      left: 42%;
+      left: 50%;
 
-      width: 530px;
-      height: 587px;
-      margin-left: 0;
+      width: 1052px;
+      height: 644px;
+      margin-left: -453px;
     }
   }
 }
