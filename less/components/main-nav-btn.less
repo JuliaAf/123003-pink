@@ -1,15 +1,19 @@
 .main-nav-btn {
   position: absolute;
-  top: 27px;
-  right: 20px;
+  position: relative;
+  top: -17px;
+  right: 4px;
+  z-index: 10;
 
+  display: block;
   float: right;
   width: 50px;
+  width: 50px;
+  height: 4px;
   padding: 0;
 
-  background-color: none;
-  border: none;
-  outline: none;
+
+
   &::after {
     content: "";
     position: absolute;
@@ -21,6 +25,12 @@
     height: 4px;
 
     background-color: @white-color;
+  }
+  &:hover::after {
+    background-color: @accent-color;
+  }
+  &:active::after {
+    background-color: @accent-color-tr;
   }
   &::before {
     content: "";
@@ -35,6 +45,14 @@
     background-color: none;
     border-top: 4px solid @white-color;
     border-bottom: 4px solid @white-color;
+  }
+  &:hover::before {
+    border-top: 4px solid @accent-color;
+    border-bottom: 4px solid @accent-color;
+  }
+  &:active::before {
+    border-top: 4px solid @accent-color-tr;
+    border-bottom: 4px solid @accent-color-tr;
   }
   &--close {
     display: block;
@@ -55,12 +73,24 @@
     border: 0;
     transform: rotate(45deg);
   }
+  &--close:hover::before,
+  &--close:hover::after {
+    background-color: @accent-color;
+    border: 0;
+  }
+  &--close:active::before,
+  &--close:active::after {
+    background-color: @accent-color-tr;
+    border: 0;
+  }
   &--close::after {
     transform: rotate(-45deg);
   }
 }
 @media @tablet-width {
   .main-nav-btn {
+    top: -49px;
+    right: -21px;
     &::after {
       top: 27px;
       left: -20px;

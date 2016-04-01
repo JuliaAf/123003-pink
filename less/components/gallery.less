@@ -56,13 +56,15 @@
     text-transform: uppercase;
     text-decoration: none;
   }
-  &__like::before {
-    content: url(../img/icon-heart.svg);
-    position: relative;
 
-    width: 12px;
-    height: 11px;
-    margin-right: 17px;
+  &__icon-heart {
+    width: 13px;
+    height: 13px;
+    margin-right: 16px;
+
+    vertical-align: middle;
+
+    fill: @accent-color;
   }
 }
 
@@ -127,26 +129,27 @@
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
+      align-items: center;
       margin-top: 0;
       margin-bottom: 0;
     }
-    &__like::before {
+    &__icon-heart {
       order: 2;
-      margin-right: 7px;
+      margin-right: 5px;
+    }
+    &__like span {
+      order: 1;
     }
     &__like--panorama {
       position: absolute;
-      right: 60px;
+      right: 13px;
       bottom: 60px;
       left: auto;
 
       padding: 0;
     }
-    &__like--panorama::before {
-      content: url(../img/icon-heart.svg);
-      position: absolute;
-      right: -38px;
-      bottom: 12px;
+    &__like--panorama span {
+      margin-right: 15px;
     }
   }
 }
@@ -175,9 +178,6 @@
 
       transform: translateX(-11%);
     }
-    &__like {
-      bottom: -68px;
-    }
     &__review--panorama {
       min-height: auto;
     }
@@ -193,8 +193,11 @@
     &__author--panorama {
       padding: 0;
     }
+    &__like {
+      bottom: -68px;
+    }
     &__like--panorama {
-      right: 60px;
+      right: 25px;
       bottom: 35px;
     }
   }

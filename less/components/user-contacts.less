@@ -1,6 +1,7 @@
 .user-contacts {
   margin-bottom: 25px;
-  input,
+
+
   &__label {
     display: block;
   }
@@ -13,7 +14,7 @@
     text-transform: uppercase;
   }
 
-  input {
+  &__input {
     box-sizing: border-box;
     width: 100%;
     margin-bottom: 20px;
@@ -25,6 +26,12 @@
     border: 2px solid @border-color;
     border-radius: 3px;
     outline: 0;
+  }
+  &__input:hover {
+    border: 2px solid #000000;
+  }
+  &__input:focus {
+    border: 2px solid @accent-color;
   }
 }
 @media @mobile-width {
@@ -73,13 +80,14 @@
   .user-contacts {
     flex-flow: row wrap;
     justify-content: space-between;
-    margin-bottom: 65px;
+    margin-bottom: 60px;
     padding-top: 40px;
-    input {
-      margin-bottom: 10px;
-    }
+
     &__input-container {
       flex-basis: 46%;
+    }
+    &__input {
+      margin-bottom: 15px;
     }
     &__label {
       margin-bottom: 22px;

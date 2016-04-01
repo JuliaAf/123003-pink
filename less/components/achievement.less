@@ -28,16 +28,14 @@
     border: 2px solid @border-color;
   }
   &__input:checked + &__label::before {
-    background: url(../img/icon-yes.png) no-repeat center center;
+    background: url(../img/icon-yes.svg) no-repeat center center;
   }
   &__label:hover::before {
     border: 2px solid @main-color;
   }
   &__label:active::before {
-    background: url(../img/icon-yes.png) no-repeat center center;
+    background: url(../img/icon-yes.svg) no-repeat center center;
     border: 2px solid @accent-color;
-
-    fill: #000000;
   }
   &__input:checked + &__label:active::before {
     background: none;

@@ -1,11 +1,34 @@
 .price {
+  position: relative;
+
   margin-bottom: 85px;
   overflow: hidden;
 
   text-align: center;
+  &__ribbon {
+    position: absolute;
+    top: 2px;
+    left: -41px;
+    z-index: 5;
+
+    width: 194px;
+    height: 72px;
+  }
+  &::before {
+    content: "ХИТ";
+    position: absolute;
+    top: 17px;
+    left: 29px;
+    z-index: 10;
+
+    font-weight: bold;
+    color: white;
+
+    transform: rotate(-45deg);
+  }
   &__table {
     width: 848px;
-    margin-bottom: 35px;
+    margin-bottom: 29px;
 
     text-transform: uppercase;
 
@@ -16,7 +39,7 @@
     border: 2px solid @border-color;
   }
   &__table-column {
-    height: 58px;
+    padding: 15px 0;
 
     .clearfix();
   }
@@ -24,18 +47,32 @@
     float: left;
     margin-left: 23px;
   }
-  &__table-column img {
+  &__icon {
     float: right;
+    width: 30px;
+    height: 30px;
     margin-right: 20px;
   }
+  &__icon--no {
+    width: 25px;
+    height: 25px;
+  }
   &__table-column--head {
-    padding: 20px 0;
+    padding: 18px 0 32px 0;
 
     font-weight: 300;
     font-size: 24px;
     color: @white-color;
 
     background: @main-color;
+    border: 2px solid @white-color;
+  }
+  &__table-row--head {
+    border: 2px solid @white-color;
+  }
+  &__table-column--tablet {
+    border-top: 0;
+    border-left: 0;
   }
   &__table-column--head b {
     font-size: 18px;
@@ -67,15 +104,31 @@
 @media @tablet-width {
   .price {
     margin-bottom: 118px;
+    &__ribbon {
+      top: 2px;
+      left: 295px;
+
+      width: 176px;
+      height: 64px;
+    }
+    &::before {
+      top: 13px;
+      left: 358px;
+    }
     &__table {
       width: 618px;
       margin: 0 auto;
 
       transform: none;
     }
+    &__icon {
+      float: none;
+      margin-right: 0;
+    }
     &__table-column {
       width: 25%;
       height: 44px;
+      padding: 0;
     }
     &__table-column--head {
       padding: 15px 0;
@@ -102,6 +155,16 @@
 @media @desktop-width {
   .price {
     margin-bottom: 165px;
+    &__ribbon {
+      left: 545px;
+
+      width: 184px;
+      height: 68px;
+    }
+    &::before {
+      top: 15px;
+      left: 611px;
+    }
     &__table {
       width: 940px;
     }

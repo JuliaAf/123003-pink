@@ -57,13 +57,39 @@
 
     border-color: #dddfe0;
   }
+  &__cancel-btn:hover {
+    border: 3px solid #b5b9be;
+    outline: 0;
+  }
+  &__cancel-btn:active {
+    color: rgba(255,255,255,0.3);
+
+    background: #b5b9be;
+    outline: 0;
+  }
+  &__make-btn:hover {
+    color: @white-color;
+
+    background: @accent-color;
+    outline: 0;
+  }
+  &__make-btn:active {
+    color: rgba(255,255,255,0.3);
+
+    background: @accent-color;
+    outline: 0;
+  }
+  &__make-btn:focus,
+  &__cancel-btn:focus {
+    outline: 0;
+  }
 }
 @media @tablet-width {
   .upload {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin-bottom: 5px;
+    margin-bottom: 0;
     &__title {
       flex-basis: 100%;
       padding-bottom: 66px;
@@ -100,7 +126,7 @@
 @media @desktop-width {
   .upload {
     margin-right: 130px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     margin-left: 130px;
     &__title {
       padding: 3px 0 65px 0;
