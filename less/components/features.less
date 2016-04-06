@@ -1,25 +1,38 @@
 .features {
   margin-bottom: 45px;
+  overflow: hidden;
 
   text-align: center;
   color: @main-color;
 
-  &__title {
-    margin-bottom: 115px;
+  background: @bg-grey;
 
+  &__title {
     font-weight: 300;
     font-size: 24px;
     line-height: 30px;
+
+    background: @white-color;
   }
   &__title br {
     line-height: 55px;
   }
+  &__bg-triangle {
+    width: 238%;
+    margin-top: -45px;
+  }
   &__item {
-    margin-bottom: 32px;
+    margin-bottom: 30px;
+    padding: 0 20px;
     overflow: hidden;
+  }
+  &__item:last-child {
+    margin-bottom: 0;
   }
   &__item h3 {
     margin-bottom: 12px;
+
+    font-size: 18px;
   }
   &__item p {
     margin: 0;
@@ -27,7 +40,7 @@
   &__img {
     width: 157px;
     height: 320px;
-    margin-top: 40px;
+    margin-top: 45px;
     margin-bottom: -50px;
   }
   &__img--desktop {
@@ -46,9 +59,12 @@
   .features {
     position: relative;
 
-    margin-bottom: 80px;
+    margin-bottom: 85px;
     &__title {
-      margin-bottom: 130px;
+      position: relative;
+
+      margin-bottom: 100px;
+      padding-bottom: 10px;
 
       font-size: 40px;
     }
@@ -57,22 +73,27 @@
     }
     &__item {
       margin-bottom: 18px;
+      padding: 0 40px;
 
       text-align: left;
+    }
+    &__bg-triangle {
+      margin-top: -135px;
     }
     &__description {
       width: 50%;
       margin-left: auto;
     }
     &__description p {
-      margin-bottom: 18px;
+      margin-bottom: 15px;
     }
     &__description br {
       display: none;
     }
     &__img {
       width: 268px;
-      height: 548px;
+      height: 477px;
+      margin-left: 40px;
     }
     &__img-container {
       position: absolute;
@@ -86,22 +107,42 @@
 }
 @media @desktop-width {
   .features {
+    position: relative;
+
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin-bottom: 27px;
+    margin: 0;
+    padding-bottom: 31px;
     &__title {
       width: 100%;
-      margin-bottom: 75px;
+      margin-bottom: 65px;
 
       font-size: 50px;
       line-height: 60px;
     }
-    &__item {
+    &__bg-triangle {
+      position: absolute;
+      top: 296px;
+      left: 0;
+
+      width: 180%;
+      height: 220px;
+    }
+    &__items {
       display: flex;
-      flex-basis: 32%;
-      flex-flow: column nowrap;
+      flex-flow: row nowrap;
       justify-content: space-between;
+      padding: 0 130px;
+    }
+    &__item {
+      z-index: 20;
+
+      display: flex;
+      flex-basis: 31%;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      padding: 0;
 
       text-align: center;
     }
@@ -115,8 +156,8 @@
     &__img {
       position: static;
 
-      width: 184px;
-      height: 377px;
+      width: 100%;
+      height: 300px;
       margin: 0 auto;
     }
     &__description {

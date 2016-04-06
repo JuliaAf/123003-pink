@@ -1,12 +1,12 @@
 .main-nav {
   position: absolute;
-  top: 69px;
+  top: 64px;
   left: 0;
   z-index: 5;
 
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0;;
   &--hide {
     display: none;
   }
@@ -28,10 +28,16 @@
     border-top: solid 1px rgba(255,255,255,0.15);
     border-bottom: solid 1px #000000;
   }
+  &__item a:hover {
+    color: @accent-color;
+  }
+  &__item a:active {
+    color: @accent-color-tr;
+  }
 }
 @media @tablet-width {
   .main-nav {
-    top: 108px;
+    top: 111px;
   }
 }
 @media @desktop-width {
@@ -41,19 +47,27 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    // &--hide {
-    //   display: block;
-    // }
     &__item {
+      padding: 37px 0;
     }
     &__item a {
-      padding: 42px 0;
+      padding: 5px 0;
 
       font-weight: 400;
       text-transform: capitalize;
 
       background: none;
       border: 0;
+    }
+    &__item a:hover {
+      color: @white-color;
+
+      box-shadow: 0  2px 0 @white-color;
+    }
+    &__item a:active {
+      color: rgba(255,255,255,0.3);
+
+      box-shadow: none;
     }
   }
 }

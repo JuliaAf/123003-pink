@@ -4,21 +4,24 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  margin-bottom: 65px;
+  margin-bottom: 58px;
   padding: 0 20px;
 
   &__icon {
     width: 48px;
     height: 48px;
 
-    background: url(../img/icon-editor-crop.svg) no-repeat center center;
-    background-size: 100%;
-  }
-  &__icon--fill {
-    background: url(../img/icon-editor-fill.svg) no-repeat center center;
+    fill: #b5b9be;
   }
   &__icon--contrast {
-    background: url(../img/icon-editor-contrast.svg) no-repeat center center;
+    width: 35px;
+    height: 35px;
+  }
+  &__icon:hover {
+    fill: #8d949b;
+  }
+  &__icon:active {
+    fill: @accent-color;
   }
   &__range {
     position: absolute;
@@ -49,6 +52,9 @@
     border-radius: 50%;
     cursor: pointer;
   }
+  &__toggle:active {
+    background: @accent-color;;
+  }
 }
 @media @mobile-width {
   .upload-filter__range--crop,
@@ -74,8 +80,8 @@
       border-bottom: 1px solid @border-color;
     }
     &__icon {
-      width: 35px;
-      height: 35px;
+      width: 30px;
+      height: 30px;
       margin-right: 27px;
       margin-bottom: 0;
 

@@ -5,8 +5,9 @@
 }
 @media @tablet-width {
   .effect {
-    width: 100%;
+    width: auto;
     margin-bottom: 85px;
+    padding: 0 40px;
 
     text-align: left;
 
@@ -16,6 +17,8 @@
 
     &__img {
       float: left;
+      width: 241px;
+      height: 279px;
       padding-right: 70px;
     }
     &__title {
@@ -35,12 +38,18 @@
     }
     &__link {
       display: block;
+
+      color: @accent-color;
     }
   }
 }
 @media @desktop-width {
   .effect {
-    margin-bottom: 238px;
+    margin-bottom: 70px;
+    padding: 0 130px;
+    padding-bottom: 65px;
+
+    background: @bg-grey;
     &__img {
       width: 302px;
       height: 344px;

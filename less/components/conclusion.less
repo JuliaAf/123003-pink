@@ -3,6 +3,15 @@
   padding: 0;
 
   border: 0;
+
+  &__textarea:hover {
+    border: 2px solid #000000;
+    outline: 0;
+  }
+  &__textarea:focus {
+    border: 2px solid @accent-color;
+    outline: 0;
+  }
   &__title {
     display: block;
     margin-bottom: 15px;
@@ -12,7 +21,7 @@
     color: @accent-color;
     text-transform: uppercase;
   }
-  textarea {
+  &__textarea {
     width: 85%;
     height: 160px;
     margin-bottom: 37px;
@@ -51,7 +60,7 @@
 }
 @media @desktop-width {
   .conclusion {
-    margin-bottom: 70px;
+    margin-bottom: 65px;
     padding-top: 20px;
     padding-bottom: 0;
     textarea {

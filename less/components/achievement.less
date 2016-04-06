@@ -11,10 +11,9 @@
 
     cursor: pointer;
   }
-  input {
+  &__input {
     display: none;
   }
-
   &__label::before {
     content: "";
 
@@ -28,16 +27,22 @@
     border: 2px solid @border-color;
   }
   &__input:checked + &__label::before {
-    background: url(../img/icon-yes.png) no-repeat center center;
+    width: 35px;
+    height: 35px;
+
+    background: url(../img/icon-yes.svg) no-repeat center center;
+    background-size: 70%;
   }
   &__label:hover::before {
     border: 2px solid @main-color;
   }
   &__label:active::before {
-    background: url(../img/icon-yes.png) no-repeat center center;
-    border: 2px solid @accent-color;
+    width: 35px;
+    height: 35px;
 
-    fill: #000000;
+    background: url(../img/icon-yes.svg) no-repeat center center;
+    background-size: 70%;
+    border: 2px solid @accent-color;
   }
   &__input:checked + &__label:active::before {
     background: none;
@@ -123,3 +128,4 @@
     }
   }
 }
+//

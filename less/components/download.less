@@ -1,5 +1,5 @@
 .download {
-  padding: 28px 20px 33px 20px;
+  padding: 28px 20px 31px 20px;
 
   font-weight: 300;
   font-size: 14px;
@@ -11,7 +11,7 @@
 
   &__link {
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 33px;
     padding: 12px 0;
 
     font-weight: 700;
@@ -22,12 +22,21 @@
     border: 3px solid @white-color;
     border-radius: 30px;
   }
+  &__link:hover {
+    color: @accent-color;
+
+    background: @white-color;
+  }
+  &__link:active {
+    color: @accent-color-tr;
+  }
   &__list {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+    align-items: center;
     margin: 0;
-    margin-bottom: 22px;
+    margin-bottom: 13px;
     padding: 0;
 
     list-style-type: none;
@@ -38,19 +47,17 @@
     vertical-align: bottom;
   }
 
-  &__item a {
-    display: block;
+  &__logo-apple {
     width: 46px;
-    height: 56px;
+    height: 57px;
   }
-  &__item--apple a {
-    background: url(../img/logo-apple.svg) no-repeat center bottom;
+  &__logo-android {
+    width: 42px;
+    height: 47px;
   }
-  &__item--android a {
-    background: url(../img/logo-android.svg) no-repeat center bottom;
-  }
-  &__item--windows a {
-    background: url(../img/logo-microsoft.svg) no-repeat center bottom;
+  &__logo-microsoft {
+    width: 44px;
+    height: 42px;
   }
 }
 @media @tablet-width {
@@ -74,7 +81,10 @@
       padding: 12px 0;
     }
     &__list {
-      margin-bottom: 35px;
+      margin-bottom: 28px;
+    }
+    &__logo-android {
+      opacity: 0.5;
     }
   }
 }
@@ -84,9 +94,11 @@
     margin-left: 112px;
     &__link {
       margin-bottom: 70px;
+
+      font-size: 21px;
     }
     &__list {
-      margin-bottom: 55px;
+      margin-bottom: 50px;
     }
   }
 }

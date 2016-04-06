@@ -1,4 +1,6 @@
 .contacts {
+  position: relative;
+
   width: 100%;
 
   text-align: center;
@@ -32,6 +34,16 @@
     color: @accent-color;
     text-decoration: none;
   }
+  &__email a:hover {
+    color: #000000;
+
+    border-bottom: 1px solid #000000;
+  }
+  &__email a:active {
+    color: rgba(0,0,0,0.3);
+
+    border: 0;
+  }
   &__adress {
     position: relative;
   }
@@ -46,11 +58,22 @@
 
     background: url(../img/bg-triangle-white-footer.svg);
   }
+  &__triangle {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    z-index: 10;
+
+    width: 150%;
+    margin-left: -25%;
+  }
+
   &__map iframe {
     width: 100%;
     height: 220px;
 
     background-image: url(../img/bg-map.png);
+    background-size: 100%;
     border: 0;
   }
 }
@@ -73,11 +96,23 @@
       flex-basis: 50%;
       margin-bottom: 50px;
     }
+    &__adress {
+      margin-bottom: 20px;
+    }
     &__adress::after {
       bottom: -106px;
     }
     &__map iframe {
-      height: 352px;
+      height: 385px;
+    }
+    &__triangle {
+      position: absolute;
+      top: 300px;
+      left: 0;
+      z-index: 10;
+
+      width: 136%;
+      margin-left: -18%;
     }
   }
 }
@@ -113,7 +148,16 @@
       margin-bottom: 28px;
     }
     &__map iframe {
-      height: 470px;
+      height: 500px;
+    }
+    &__triangle {
+      position: absolute;
+      top: 292px;
+      left: 0;
+      z-index: 10;
+
+      width: 100%;
+      margin-left: 0;
     }
   }
 }
