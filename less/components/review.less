@@ -1,9 +1,14 @@
 .review {
-  margin-bottom: 125px;
+  position: relative;
+
+  margin-bottom: 40px;
 
   text-align: center;
   &__review-2,
   &__review-3 {
+    display: none;
+  }
+  &__img {
     display: none;
   }
   &__author {
@@ -28,6 +33,7 @@
     background-color: rgba(0,0,0,0.3);
     border: 3px solid @white-color;
     border-radius: 50%;
+    cursor: pointer;
   }
   &__slider-item:hover {
     background-color: rgba(0,0,0,0.6);
@@ -45,13 +51,21 @@
   &__slider--desktop {
     display: none;
   }
+  &__bg-triangle {
+    position: absolute;
+    bottom: -107px;
+    left: -20px;
+
+    width: 300%;
+    margin-top: -40px;
+  }
 }
 
 @media @tablet-width {
   .review {
     display: flex;
     flex-flow: column nowrap;
-    margin-bottom: 103px;
+    margin-bottom: 21px;
 
     font-size: 18px;
     &__review-1 {
@@ -85,23 +99,43 @@
     &__slider-item {
       margin-right: 12px;
     }
+    &__bg-triangle {
+      position: absolute;
+      bottom: -123px;
+      left: -40px;
+      z-index: 0;
+
+      width: 113%;
+      margin-top: -40px;
+    }
   }
 }
 @media @desktop-width {
   .review {
-    margin-bottom: 160px;
+    margin-bottom: 0;
     padding: 0 70px;
+
+    &__img {
+      display: block;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 22px;
+      margin-left: 50%;
+
+      transform: translateX(-50%);
+    }
+    &__author {
+      font-weight: bold;
+      font-size: 24px;
+    }
+    &__author span {
+      font-size: 18px;
+    }
     &__cite {
       margin-bottom: 35px;
       padding: 0 40px;
     }
-    &__author--tablet {
-      font-size: 24px;
-      line-height: 30px;
-    }
-    &__author--tablet span {
-      font-size: 18px;
-    }
+
     &__slider {
       display: none;
     }
@@ -150,6 +184,15 @@
     &__slider-item-next::after {
       top: -155px;
       left: 844px;
+    }
+    &__bg-triangle {
+      position: absolute;
+      bottom: -122px;
+      left: -133px;
+      z-index: 0;
+
+      width: 129%;
+      margin-top: -40px;
     }
   }
 }

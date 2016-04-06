@@ -24,11 +24,11 @@
 
     background: #1c9b5e;
   }
-  &__btn:focus/*на что навешивать аниацию?*/ {
-    animation: in-progress 1s;
+  &__btn--processing:active {
+    animation: in-progress 2s;
     animation-iteration-count: infinite;
   }
-  keyframes in-progress {
+  @keyframes in-progress {
     0% {
       color: @white-color;
     }

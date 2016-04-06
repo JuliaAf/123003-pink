@@ -2,7 +2,9 @@
   &__item {
     position: relative;
 
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+
+    background: @bg-grey;
   }
 
   &__item--panorama::before {
@@ -51,6 +53,8 @@
     text-transform: uppercase;
   }
   &__like {
+    margin-bottom: 20px;
+
     font-size: 12px;
     color: @accent-color;
     text-transform: uppercase;
@@ -87,13 +91,13 @@
       flex-basis: 48%;
       flex-flow: column wrap;
       justify-content: flex-start;
-      margin-bottom: 42px;
+      margin-bottom: 23px;
     }
     &__item--panorama {
       position: relative;
 
       flex-basis: 100%;
-      margin-bottom: 65px;
+      margin-bottom: 50px;
     }
     &__item--panorama::before {
       top: 57px;
@@ -114,7 +118,7 @@
       display: flex;
       flex-flow: column nowrap;
       justify-content: space-between;
-      min-height: 110px;
+      min-height: 130px;
       padding: 0 25px;
     }
     &__review--panorama {
@@ -125,13 +129,16 @@
       flex-flow: column wrap;
       justify-content: flex-start;
     }
+    &__description--panorama {
+      margin-bottom: 13px;
+    }
     &__like {
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
       align-items: center;
       margin-top: 0;
-      margin-bottom: 0;
+      margin-bottom: 20px;
     }
     &__icon-heart {
       order: 2;
@@ -142,8 +149,8 @@
     }
     &__like--panorama {
       position: absolute;
-      right: 13px;
-      bottom: 60px;
+      right: 23px;
+      bottom: 52px;
       left: auto;
 
       padding: 0;
@@ -167,7 +174,16 @@
     }
     &__item {
       flex-basis: 31.7%;
-      margin-bottom: 77px;
+      margin-bottom: 60px;
+    }
+    &__item--panorama {
+      flex-basis: 100%;
+      margin-bottom: 52px;
+      margin-left: 0;
+    }
+    &__item--panorama::before {
+      top: 54px;
+      right: 0;
     }
     &__img {
       height: 400px;
@@ -178,18 +194,13 @@
 
       transform: translateX(-11%);
     }
+    &__review {
+      min-height: 130px;
+    }
     &__review--panorama {
       min-height: auto;
     }
-    &__item--panorama {
-      flex-basis: 100%;
-      margin-bottom: 65px;
-      margin-left: 0;
-    }
-    &__item--panorama::before {
-      top: 54px;
-      right: 0;
-    }
+
     &__author--panorama {
       padding: 0;
     }
@@ -198,7 +209,7 @@
     }
     &__like--panorama {
       right: 25px;
-      bottom: 35px;
+      bottom: 25px;
     }
   }
 }

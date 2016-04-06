@@ -12,16 +12,21 @@ var svgmin = require("gulp-svgmin");
 var mqpacker = require("css-mqpacker");
 var minify = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
-var copy = require("gulp-contrib-copy");
-var clean = require("gulp-contrib-clean");
+var rimraf = require('rimraf');
+var merge = require('merge-stream');
+var uglify = require('gulp-uglify');
+
+gulp.task('clean', function (cb) {
+  rimraf('./build', cb);
+});
 
 
-gulp.task("style", function() {
+gulp.task("style", ["clean"], function() {
   gulp.src("less/style.less")
     .pipe(plumber())
     .pipe(less())
     .pipe(postcss([
-      autoprefixer({browsers: [/*не работает*/
+      autoprefixer({browsers: [
         "last 1 version",
         "last 2 Chrome versions",
         "last 2 Firefox versions",
@@ -32,11 +37,23 @@ gulp.task("style", function() {
         sort: true
       })
     ]))
-    .pipe(gulp.dest("build/css/style.css"))
-    .pipe(minify())
-    .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css/style.css"))
+    .pipe(gulp.dest("css"))
     .pipe(server.reload({stream: true}));
+});
+
+
+gulp.task("compress", ["style"], function(){
+  var jss = gulp.src("js/**/*.js")
+  .pipe(uglify())
+  .pipe(rename("main-nav-open.min.js"))
+  .pipe(gulp.dest("js"));
+
+  var csss = gulp.src("css/**/*.css")
+  .pipe(minify())
+  .pipe(rename("style.min.css"))
+  .pipe(gulp.dest("css"));
+
+  return merge(jss, csss);
 });
 
 gulp.task("images", function(){
@@ -45,7 +62,7 @@ gulp.task("images", function(){
     optimizationLevel:3,
     progressive:true
   }))
-  .pipe(gulp.dest("build/img"));
+  .pipe(gulp.dest("img/compressed"));
 });
 
 gulp.task("sprite", function () {
@@ -55,38 +72,36 @@ gulp.task("sprite", function () {
     inlineSvg: true
   }))
   .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("build/img/sprite.svg"));
+  .pipe(gulp.dest("img"));
 });
 
-gulp.task("build", function(){
-  return gulp.src([
-    "fonts/**/*.{woff, woff2}",
-    "img/**",/*картинки копируются не сжатые, надо где-то перечислить такси images и sprite*/
-    "js/**",/*тоже надо минифицировать?*/
-    "*.html"
-  ])
-  .pipe(clean("build"))
-  // .pipe(style())
-  .pipe(copy())       /*конфигурация html для слежения*/
-  .pipe(gulp.dest("build"))
-  .pipe(imagemin({
-    optimizationLevel:3,
-    progressive:true
-  }))
+gulp.task("build", ["compress"], function(){
+  var htmls = gulp.src("*.html")
+  .pipe(gulp.dest("build"));
+
+  var csss = gulp.src("css/**/*.css")
+  .pipe(gulp.dest("build/css"));
+
+  var fonts = gulp.src("fonts/**/*{woff,woff2}")
+  .pipe(gulp.dest("build/fonts"));
+
+  var jss = gulp.src("js/**/*.js")
+  .pipe(gulp.dest("build/js"));
+
+  var images = gulp.src("img/compressed/*.*")
+  .pipe(gulp.dest("build/img"));
+
+  return merge(htmls, csss, fonts, jss, images);
 });
 
 
-/*надо ли остальные такси добавлять кроме style*/
 gulp.task("serve", ["style"], function() {
   server.init({
-    server: "build",
+    server: ".",
     notify: false,
     open: true,
     ui: false
-  });
-
-
-/*2 конфигурации style и html.*/
+});
   gulp.watch("less/**/*.less", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);/*при изменении запускается таск copy:html*/
+  gulp.watch("*.html").on("change", server.reload);
 });

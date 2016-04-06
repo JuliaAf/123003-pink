@@ -1,3 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="21" viewBox="0 0 31 21" fill="#d22856">
-  <image id="yes.svg" width="31" height="21" fill="#d22856" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAVCAMAAACJ68VtAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAM1BMVEUAAAA9xkQ9xkQ9xkQ9xkQ9xkQ9xkQ9xkQ9xkQ9xkQ9xkQ9xkQ9xkQ9xkQ9xkQ9xkQAAAD4INiwAAAAD3RSTlMAEM8w77+fYI8ggHBQQN9I3iMHAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAHBJREFUKM+d0YsKgCAMBdDr1Ex77P//NltCGW5BA8F5hsoG6OGIyWBPzGxwqBxtnpzN+MmJv3m2ObUkl2wxwmMvsXSMPgOm10F/m3BY1eeE/eA/ReW7Gy4OGdiuWZDCrd3nImVgUqBzK9C5FuwcB3wAXvYHJtx2FfgAAAAASUVORK5CYII="/>
-</svg>
+<svg version="1.0" id="icon-yes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  	 width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09"
+  	 xml:space="preserve">
+  <path fill="#d22856" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0
+  	s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.09
+  	C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+  </svg>
