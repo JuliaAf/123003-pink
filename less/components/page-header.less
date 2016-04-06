@@ -6,12 +6,11 @@
 
   color: @white-color;
 
-  background: url(../img/bg-back-mobile.jpg);
+  background: url(../img/bg-back-mobile.jpg) #2c3c4c;
   background-position: center 0;
-
-
-  @media(resolution: 1.5dppx) {
-    background: url(../img/bg-back-mobile@2x.jpg);
+  @media (min-resolution: 144dpi),
+  (resolution: 1.5dppx) {
+    background: url(../img/bg-back-mobile@2x.jpg) #2c3c4c;
   }
   &--inner {
     min-height: 236px;
@@ -27,12 +26,6 @@
     width: 75px;
     height: 22px;
   }
-  // &__logo:hover {
-  //   fill: @accent-color;
-  // }
-  // &__logo:active {
-  //   fill: rgba(255,255,255,0.3);
-  // }
   &__heading--inner {
     margin-bottom: 31px;
   }
@@ -67,12 +60,12 @@
     min-height: 730px;
     margin-bottom: 57px;
 
-    background: url(../img/bg-back-tablet@1x.jpg);
+    background: url(../img/bg-back-tablet@1x.jpg) #2c3c4c;
     background-position: center 0;
 
 
     @media(resolution: 1.5dppx) {
-      background: url(../img/bg-back-tablet@2x.jpg);
+      background: url(../img/bg-back-tablet@2x.jpg) #2c3c4c;
     }
 
     &__heading {
@@ -125,13 +118,12 @@
     min-height: 853px;
     margin-bottom: 67px;
 
-    background: url(../img/bg-back-desktop.jpg);
+    background: url(../img/bg-back-desktop.jpg) #2c3c4c;
     background-position: center 0;
 
 
     @media(resolution: 1.5dppx) {
-      background: url(../img/bg-back-desktop@2x.jpg);
-      /*такой картинки нет в пакете от кекса*/
+      background: url(../img/bg-back-desktop@2x.jpg) #2c3c4c;
     }
     .wrapper {
       display: flex;

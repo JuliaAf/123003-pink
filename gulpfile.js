@@ -91,6 +91,9 @@ gulp.task("build", ["compress"], function(){
   var images = gulp.src("img/compressed/*.*")
   .pipe(gulp.dest("build/img"));
 
+  var svgs = gulp.src("img/*.svg")
+  .pipe(gulp.dest("build/img"));
+
   return merge(htmls, csss, fonts, jss, images);
 });
 

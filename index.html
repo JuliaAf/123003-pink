@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -28,7 +29,7 @@
       <symbol id="timer" viewBox="0 0 240 277"><path fill="#DEDEDE" d="M212.2 82l6.7-6.2c4.9-4.6 5.2-12.3.6-17.2s-12.3-5.2-17.2-.6l-7.4 6.9C178 51.2 157.2 42 134.5 39.2v-8h7.8c8 0 14.5-6.5 14.5-14.5v-1.2c0-8-6.5-14.5-14.5-14.5H97.6c-8 0-14.5 6.5-14.5 14.5v1.2c0 8 6.5 14.5 14.5 14.5h8v8C46.7 46.3 1 96.5 1 157.2c0 65.6 53.4 119 119 119s119-53.4 119-119c0-28.5-10.1-54.6-26.8-75.2zM120 250.7c-51.6 0-93.5-41.8-93.5-93.5 0-51.6 41.8-93.5 93.5-93.5s93.5 41.8 93.5 93.5c0 51.6-41.9 93.5-93.5 93.5z"/><path fill="#C7505F" d="M120 56.2c-55.7 0-101 45.3-101 101s45.3 101 101 101 101-45.3 101-101-45.3-101-101-101zm0 189c-48.6 0-88-39.4-88-88s39.4-88 88-88 88 39.4 88 88-39.4 88-88 88z"/><g fill="#C7505F"><path d="M115.9 189.1H68.7v-9.9l17-17.2c5-5.1 8.3-8.7 9.8-10.7s2.7-3.8 3.3-5.5c.7-1.7 1-3.5 1-5.3 0-2.7-.7-4.7-2.2-6.1-1.5-1.3-3.5-2-6-2-2.6 0-5.2.6-7.6 1.8-2.5 1.2-5 2.9-7.7 5.1l-7.8-9.2c3.3-2.8 6.1-4.8 8.3-6 2.2-1.2 4.6-2.1 7.2-2.7 2.6-.6 5.5-.9 8.7-.9 4.2 0 8 .8 11.2 2.3 3.2 1.5 5.7 3.7 7.5 6.5 1.8 2.8 2.7 5.9 2.7 9.5 0 3.1-.5 6-1.6 8.8-1.1 2.7-2.8 5.5-5.1 8.4-2.3 2.9-6.3 7-12.1 12.3l-8.7 8.2v.6h29.5v12zM171.5 175h-8.1v14h-14v-14h-28.9v-9.9l29.6-43.6h13.2V164h8.1v11zm-22.1-11.1v-11.5c0-1.9.1-4.7.2-8.3.2-3.6.3-5.7.4-6.3h-.4c-1.1 2.5-2.5 5-4.1 7.4l-12.4 18.7h16.3z"/></g></symbol>
     </svg>
 
-    <div class="container" style="outline:1px solid red;">
+    <div class="container">
 
       <header class="page-header">
         <div class="page-header__heading">
@@ -49,7 +50,7 @@
             </a>
             <a href="#" class="main-nav-btn"></a>
 
-            <ul class="main-nav main-nav--hide">
+            <ul class="main-nav">
               <li class="main-nav__item"><a href="index.html">главная</a></li>
               <li class="main-nav__item"><a href="photo.html">фотографии</a></li>
               <li class="main-nav__item"><a href="form.html">конкурс</a></li>
@@ -72,7 +73,7 @@
           </source>
           <img class="page-header__img"
                   src="img/iphone-hand-mobile.png" width="258" height="286" alt="page-header__img"
-                  srcset="img/iphone-hand-mobile@2x 2x.png">
+                  srcset="img/iphone-hand-mobile@2x.png 2x">
         </picture>
 
         <section class="download">
@@ -82,21 +83,21 @@
               <a href="#">
                 <svg class="download__logo-apple">
                   <use xlink:href="#logo-apple"></use>
-                <svg>
+                </svg>
               </a>
             </li>
             <li class="download__item download__item--android">
               <a href="#">
                 <svg class="download__logo-android">
                   <use xlink:href="#logo-android"></use>
-                <svg>
+                </svg>
               </a>
             </li>
             <li class="download__item download__item--windows">
               <a href="#">
                 <svg class="download__logo-microsoft">
                   <use xlink:href="#logo-microsoft"></use>
-                <svg>
+                </svg>
               </a>
             </li>
           </ul>
@@ -110,87 +111,87 @@
 
         <svg class="features__bg-triangle">
           <use xlink:href="#bg-triangle-white"></use>
-        <svg>
+        </svg>
 
         <div class="features__items">
-        <div class="features__item">
-          <div class="features__description">
-            <h3>Поднимает настроение</h3>
-            <p>Приложение позволит вам победить осенюю хандру и депрессию буквально в несколько кликов!</p>
-          </div>
-          <div class="features__img-container">
-            <picture>
-              <source
-                      media="(min-width: 1200px)"
-                      srcset="img/iphone-screen-desktop-1@1x.png 1x,
-                              img/iphone-screen-desktop-1@2x.png 2x">
-              </source>
-              <source
-                      media="(min-width: 700px)"
-                      srcset="img/iphone-screen-tablet-1@1x.png 1x,
-                              img/iphone-screen-tablet-1@2x.png 2x">
-              </source>
-              <img class="features__img features__img--desktop"
-                      src="img/iphone-screen-mobile.png" width="157" height="320" alt="features__img"
-                      srcset="img/iphone-screen-mobile@2x.png 2x">
-          </picture>
-          </div>
-        </div>
-
-        <div class="features__item">
-          <div class="features__description">
-            <h3>Меняет мир вокруг</h3>
-            <p>Сделайте снимок и украсьте его смайликом или текстовой надписью, чтобы усилить эффект</p>
-          </div>
-          <div class="features__img-container">
-            <picture>
-              <source
-                      media="(min-width: 1200px)"
-                      srcset="img/iphone-screen-desktop-2@1x.png 1x,
-                              img/iphone-screen-desktop-2@2x.png 2x">
-              </source>
-              <source
-                      media="(min-width: 700px)"
-                      srcset="img/iphone-screen-tablet-2@1x.png 1x,
-                              img/iphone-screen-tablet-2@2x.png 2x">
-              </source>
-              <img class="features__img features__img--desktop"
-                      src="img/iphone-screen-mobile.png" width="157" height="320" alt="features__img"
-                      srcset="img/iphone-screen-mobile@2x.png 2x">
+          <div class="features__item">
+            <div class="features__description">
+              <h3>Поднимает настроение</h3>
+              <p>Приложение позволит вам победить осенюю хандру и депрессию буквально в несколько кликов!</p>
+            </div>
+            <div class="features__img-container">
+              <picture>
+                <source
+                        media="(min-width: 1200px)"
+                        srcset="img/iphone-screen-desktop-1@1x.png 1x,
+                                img/iphone-screen-desktop-1@2x.png 2x">
+                </source>
+                <source
+                        media="(min-width: 700px)"
+                        srcset="img/iphone-screen-tablet-1@1x.png 1x,
+                                img/iphone-screen-tablet-1@2x.png 2x">
+                </source>
+                <img class="features__img features__img--desktop"
+                        src="img/iphone-screen-mobile.png" width="157" height="320" alt="features__img"
+                        srcset="img/iphone-screen-mobile@2x.png 2x">
             </picture>
+            </div>
           </div>
-        </div>
 
-        <div class="features__item">
-          <div class="features__description">
-            <h3>Заводит<br> новых друзей</h3>
-            <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          <div class="features__item">
+            <div class="features__description">
+              <h3>Меняет мир вокруг</h3>
+              <p>Сделайте снимок и украсьте его смайликом или текстовой надписью, чтобы усилить эффект</p>
+            </div>
+            <div class="features__img-container">
+              <picture>
+                <source
+                        media="(min-width: 1200px)"
+                        srcset="img/iphone-screen-desktop-2@1x.png 1x,
+                                img/iphone-screen-desktop-2@2x.png 2x">
+                </source>
+                <source
+                        media="(min-width: 700px)"
+                        srcset="img/iphone-screen-tablet-2@1x.png 1x,
+                                img/iphone-screen-tablet-2@2x.png 2x">
+                </source>
+                <img class="features__img features__img--desktop"
+                        src="img/iphone-screen-mobile.png" width="157" height="320" alt="features__img"
+                        srcset="img/iphone-screen-mobile@2x.png 2x">
+              </picture>
+            </div>
           </div>
-          <div class="features__img-container">
-            <picture>
-              <source
-                      media="(min-width: 1200px)"
-                      srcset="img/iphone-screen-desktop-3@1x.png 1x,
-                              img/iphone-screen-desktop-3@2x.png 2x">
-              </source>
-              <source
-                      media="(min-width: 700px)"
-                      srcset="img/iphone-screen-tablet-3@1x.png 1x,
-                              img/iphone-screen-tablet-3@2x.png 2x">
-              </source>
-              <img class="features__img"
-                      src="img/iphone-screen-mobile.png" width="157" height="320" alt="features__img"
-                      srcset="img/iphone-screen-mobile@2x.png 2x">
-            </picture>
+
+          <div class="features__item">
+            <div class="features__description">
+              <h3>Заводит<br> новых друзей</h3>
+              <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </div>
+            <div class="features__img-container">
+              <picture>
+                <source
+                        media="(min-width: 1200px)"
+                        srcset="img/iphone-screen-desktop-3@1x.png 1x,
+                                img/iphone-screen-desktop-3@2x.png 2x">
+                </source>
+                <source
+                        media="(min-width: 700px)"
+                        srcset="img/iphone-screen-tablet-3@1x.png 1x,
+                                img/iphone-screen-tablet-3@2x.png 2x">
+                </source>
+                <img class="features__img"
+                        src="img/iphone-screen-mobile.png" width="157" height="320" alt="features__img"
+                        srcset="img/iphone-screen-mobile@2x.png 2x">
+              </picture>
+            </div>
           </div>
-        </div>
         </div>
       </section>
 
       <section class="effect">
         <svg class="effect__img">
           <use xlink:href="#timer"></use>
-        <svg>
+        </svg>
         <span class="effect__title">Эффект<br> на 24 часа!</span>
         <p class="effect__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
         <a class="effect__link" href="#">Узнать больше об исследовании</a>
@@ -200,7 +201,7 @@
         <section class="review">
           <svg class="review__img">
             <use xlink:href="#quotes"></use>
-          <svg>
+          </svg>
           <div class="review__review-1">
             <b class="review__author">Николай Петров<br> <span>25 лет, водитель трамвая</span></b>
             <blockquote class="review__cite">
@@ -232,7 +233,7 @@
           </div>
           <svg class="review__bg-triangle">
             <use xlink:href="#bg-triangle-white"></use>
-          <svg>
+          </svg>
         </section>
       </div>
 
@@ -249,7 +250,7 @@
               <td class="price__table-column price__table-column--head price__table-column--head-active">
                   <svg class="price__ribbon">
                     <use xlink:href="#bg-hit"></use>
-                  <svg>
+                  </svg>
                   <b>стандарт</b><br>3,99 USD
               </td>
               <td class="price__table-column price__table-column--head">
@@ -264,19 +265,19 @@
                 <span>розовый фильтр</span>
                 <svg class="price__icon">
                   <use xlink:href="#icon-yes"></use>
-                <svg>
+                </svg>
               </td>
               <td class="price__table-column price__table-column--active">
                 <span>розовый фильтр</span>
                 <svg class="price__icon">
                   <use xlink:href="#icon-yes"></use>
-                <svg>
+                </svg>
               </td>
               <td class="price__table-column">
                 <span>розовый фильтр</span>
                 <svg class="price__icon">
                   <use xlink:href="#icon-yes"></use>
-                <svg>
+                </svg>
               </td>
             </tr>
             <tr class="price__table-row">
@@ -285,19 +286,19 @@
                 <span>смайлики</span>
                 <svg class="price__icon price__icon--no">
                   <use xlink:href="#icon-no"></use>
-                <svg>
+                </svg>
               </td>
               <td class="price__table-column price__table-column--active">
                 <span>смайлики</span>
                 <svg class="price__icon">
                   <use xlink:href="#icon-yes"></use>
-                <svg>
+                </svg>
               </td>
               <td class="price__table-column">
                 <span>смайлики</span>
                 <svg class="price__icon">
                   <use xlink:href="#icon-yes"></use>
-                <svg>
+                </svg>
               </td>
             </tr>
             <tr class="price__table-row">
@@ -306,19 +307,19 @@
                 <span>комментарии</span>
                 <svg class="price__icon price__icon--no">
                   <use xlink:href="#icon-no"></use>
-                <svg>
+                </svg>
               </td>
               <td class="price__table-column price__table-column--active">
                 <span>комментарии</span>
                 <svg class="price__icon price__icon--no">
                   <use xlink:href="#icon-no"></use>
-                <svg>
+                </svg>
               </td>
               <td class="price__table-column">
                 <span>комментарии</span>
                 <svg class="price__icon">
                   <use xlink:href="#icon-yes"></use>
-                <svg>
+                </svg>
               </td>
             </tr>
           </tbody>
@@ -348,7 +349,7 @@
             </div>
             <svg class="contacts__triangle">
               <use xlink:href="#bg-triangle-white-footer"></use>
-            <svg>
+            </svg>
           </div>
           <div class="contacts__map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6000760813506!2d30.32172073647358!3d59.938778058850886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1454246306456"  allowfullscreen></iframe>
@@ -376,20 +377,20 @@
                 <a href="#">
                   <svg class="social__icon">
                     <use xlink:href="#icon-twitter"></use>
-                  <svg></a>
+                  </svg></a>
               </li>
               <li class="social__item social__item--fb">
                 <a href="#">
                   <svg class="social__icon">
                     <use xlink:href="#icon-facebook"></use>
-                  <svg></a>
+                  </svg>
                 </a>
               </li>
               <li class="social__item social__item--youtube">
                 <a href="#">
                   <svg class="social__icon">
                     <use xlink:href="#icon-youtube"></use>
-                  <svg></a>
+                  </svg>
                 </a>
               </li>
             </ul>
